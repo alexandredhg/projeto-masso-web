@@ -1,0 +1,1557 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    /*Retira o Balancinho Horizontal do Codigo*/
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+.ContainerSkip{
+    position: relative;
+}
+
+
+.skip-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+
+    /* Sobreposição e Estilo do Botão (quando aparecer) */
+    z-index: 100;
+    background: #0056b3; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Mostra o link no topo da tela quando ele recebe o foco do teclado (Tab) */
+.skip-link:focus {
+    position: relative;
+    /* Reseta as propriedades que escondiam o elemento */
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    
+    /* Posicionamento na tela */
+    top: auto;  /* Ajuste a distância do topo aqui */
+    left: auto; /* Ajuste a distância da esquerda aqui */
+    padding: 10px 20px;
+    
+    /* Destaque visual */
+    outline: 2px solid #ffcc00; 
+}
+
+
+
+
+
+
+
+
+
+
+/*Skip-Link*/
+
+/* Esconder o link da tela por padrão, mas mantém acessível para leitores de tela */
+.skip-link2 {
+    position: absolute;
+    top: -9999px;
+
+    /*Sobrepoe o Link sobre outro Elemento*/
+    z-index: 100;
+
+    /*Estilo do Botão*/
+    margin-left: 2.5rem;
+    margin-top: 0.7rem;
+    background: #0056b3; /* Cor forte que combine com o design */
+    color: white;
+    padding: 10px 20px;   
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+
+    /*Transição do Botão*/
+    transition: top 0.2s ease-in-out;
+}
+
+/* Mostra o link no topo da tela quando ele recebe o foco do teclado (Tab) */
+.skip-link:focus {
+    top: 0;
+    outline: 2px solid #ffcc00; /* Destaque visual */
+    
+}
+
+
+
+
+
+
+
+
+/*Mpdp Escuro*/
+/* ==========================================================================
+   CONFIGURAÇÃO DE ACESSIBILIDADE E VARIÁVEIS - MODO ESCURO (FIXO)
+   ========================================================================== */
+
+body {
+    /* Cores Padrão (Modo Claro) */
+    --background-color: #ffffff;
+    --text-color: #000000;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+}
+
+/* Força o container a ficar SEMPRE na extrema direita, independente de zoom ou tamanho */
+.container-switch {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* A label engloba o texto e o switch de forma fixa */
+.switch {
+    display: flex;
+    align-items: center;
+    gap: 12px;                 /* Espaço controlado entre texto e botão */
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;         /* Tamanho ideal e fixo para não estourar com o zoom */
+    position: relative;
+    user-select: none;
+}
+
+/* Esconde COMPLETAMENTE o checkbox padrão do navegador em qualquer nível de zoom */
+.switch input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}
+
+/* O corpo do Switch (Tamanho fixo e confortável) */
+.slider {
+    display: inline-block;
+    position: relative;
+    width: 55px;               /* Largura estável */
+    height: 28px;              /* Altura estável */
+    background-color: #ccc;
+    border-radius: 28px;
+    transition: 0.4s;
+}
+
+/* A bolinha branca interna */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;              
+    width: 20px;               
+    left: 4px;
+    bottom: 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* Cor de fundo quando ativado */
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+/* Movimento exato da bolinha */
+input:checked + .slider:before {
+    transform: translateX(27px);
+}
+
+
+
+
+
+
+
+/*Titulos*/
+h1{
+    color: #586927;       
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    margin-bottom: 0rem;
+    margin-left: 4rem;
+    text-align: left;
+   
+}
+
+
+
+
+h2{    
+    
+    font-size: 2rem;
+    color: #586927;   
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    margin-bottom: 0.5rem;
+    margin-left: 4rem;
+    text-align: left;       
+
+
+}
+
+
+.containerTitulos{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 4rem;
+}
+
+
+
+h3{   
+    
+    font-size: 1.75rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #191970;         
+    margin-bottom: 3rem;
+    margin-left: 4rem;   
+    text-align: left;
+
+}
+
+h4{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a;      
+    text-align: center;
+
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    
+
+}
+
+h5{
+    font-size: 1.25em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #4a3525;     
+    text-align: left;
+    margin-left: 4rem;    
+    margin-bottom: 2rem;
+    
+    
+}
+
+
+
+
+
+
+
+/*Baner*/
+.containerBaner{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+
+    /*Propriedade Faz Imagem Não Destorcer*/
+    object-fit: cover;
+
+    /*background-image: "imagem/fotoMasso1.jpd";*/
+}
+
+.itemBaner{
+    border: 0px solid black;
+    width: 100vw;
+    height: 23rem;    
+
+}
+
+
+
+
+
+
+/*Menu*/
+.containerUl{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    column-gap: 1.2rem;
+    row-gap: 0.7rem;
+
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    
+    
+       
+    
+
+    flex-wrap: wrap;
+    /*Propriedade Quebra para a Outra Linha*/
+
+    /*Mantem o Texto em uma Única Linha
+    white-space: nowrap;*/     
+
+}
+
+
+.itemLiPaginaInicial{
+    list-style-type: none; 
+  /*display: inline-block;*/
+
+}
+
+
+.itemTagPaginaInicial{
+    display: inline-block;
+
+    color: green;
+    border: 2px solid green;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+    text-decoration: none;
+    transition: transform 0.3s ease;  /*, backgroud-color 0.3s ease*/
+    padding: 5px 10px;
+
+    
+
+    
+         
+                  
+}
+
+/*Efeito Botão Menu*/
+.efeitoItemTagPaginaInicial:hover{
+    transform: scale(1.2);    
+    padding: 5px 10px; 
+
+    outline: 4px solid greenyellow;
+
+    outline-offset: 2.5px;
+    border-radius: 7px;  
+     
+        
+}
+
+
+
+
+
+
+
+/*Botão Menu Login*/
+.itemLiLogin{
+    list-style-type: none;
+
+}
+
+
+.itemTagLogin{
+    display: inline-block;
+
+    color: coral; 
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold; 
+
+    text-decoration: none;    
+    transition: transform 0.3s ease;
+    padding: 5px 10px;
+
+    
+    border: 2px solid coral;
+    border-radius: 7px;
+    
+                  
+}
+
+/*Efeito Botão Menu*/
+.efeitoItemTagLogin:hover{           
+    transform: scale(1.2);    
+    padding: 5px 10px; 
+
+    outline: 4px solid gold;
+    border-radius: 7px;
+
+    outline-offset: 2.5px;
+
+    
+
+}
+
+
+
+
+
+/*Botão Menu Li*/
+.itemLi{
+    list-style-type: none;
+    
+    
+}
+
+
+
+.itemTagLi{
+    display: inline-block;    
+
+    color: blue; 
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    
+            
+    text-decoration: none; 
+    transition: transform 0.3s ease;
+    padding: 5px 10px; 
+    
+    
+                  
+}
+
+/*Efeito Botão Menu*/
+.efeitoItemTagLi:hover{           
+    transform: scale(1.2);
+    color: red;     
+    
+
+    text-shadow: 1px 0px 0px currentColor, 0px 1px 0px currentColor, 
+    0px 0px 1px currentColor;   
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*Paragrafo*/
+.containerParagrafo{
+    display: block;
+    margin: 0 auto;
+    
+    max-width: 70%;
+    margin-bottom: 4rem
+     
+}
+
+
+.itemParagrafo{  
+
+    
+    margin: 0 auto;
+    text-align: justify;
+    text-indent: 3.5rem;
+    /*Cria Espassamentos entre Linhas do Texto*/
+    line-height: 1.5;
+
+    /*Quebra Palavras para Caber na Caixa*/
+    overflow-wrap: break-word;      
+}
+
+p{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
+
+
+/*Botão Voltar Topo*/
+.btnVoltarTopo{
+    position: fixed;
+    bottom: 7rem;
+    right: 3rem;
+    z-index: 99999;
+
+    border: 3px solid red;   
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    /*border: none;*/
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    padding: 12px 2px;
+       
+    
+}
+
+
+
+/*.voltarTopo{
+    display: flex;
+    justify-content: left;
+    
+    margin-bottom: 2.5rem;
+    margin-top: 10rem;
+    margin-left: 4rem;
+    
+    position: fixed;
+    bottom: 7rem;
+    right: 3rem;
+    z-index: 9999;
+}*/
+
+
+
+
+
+
+
+
+/*Imagens do Perfil*/
+.centerItemImagensPerfil{ 
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    column-gap: 1rem;
+    row-gap: 2rem;
+
+    margin-bottom: 4rem;
+
+    flex-wrap: wrap;
+    /*flex-wrap: wrap;
+    Propriedade Quebra para a Outra Linha*/
+    
+}
+
+
+
+.itemImagensPerfil{
+    border: px solid black;    
+    height: 10rem;
+    width: 10rem;
+    flex-shrink: 0;
+    aspect-ratio: 16/9;
+    margin-bottom: 1rem;
+    
+}
+
+
+
+.legendaImagensPerfil{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 10rem;
+    height: auto;
+    text-align: center;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*Galeria - Fotos*/
+.containerFotosAlunos{
+    
+    max-width: 90vw; 
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+
+    column-gap: 1.5rem;    
+    row-gap: 2rem;
+    
+    
+    margin-bottom: 2.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;    
+    
+    /*flex-wrap: wrap;
+    Propriedade Quebra para a Outra Linha*/
+
+    /*flex-wrap: nowrap;
+    Força Permenecer na Mesma Linha*/   
+    
+    
+}
+
+
+
+.itemFotosAlunos{
+    border: 0px solid black; 
+    border-radius: 0.5rem;   
+    height: 13rem;
+width: auto;
+    flex-shrink: 0;
+
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    margin-bottom: 2rem;
+    
+    /*aspect-ratio: 16/9;*/    
+}
+
+
+.itemFotosAlunos:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+/*Descrição Fotos Alunos*/
+.descricaoFotosAlunos{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+
+/*Esconde a Descrição das Fotos do Aluno*/
+.esconderDescricaoFotosAluno{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+/*Galeria - Videos*/
+.containerVideosAlunos{
+    max-width: 90vw; 
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start;
+    align-items: center;
+
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+
+    overflow-x: auto;
+    
+    
+    
+    /*flex-wrap: wrap;
+*Propriedade Quebra para a Outra Linha*/
+    
+    
+}
+
+
+
+.itemVideosAlunos{
+    border: 5px solid black;
+    height: 11rem;   
+    width: 17.5rem;
+    flex-shrink: 0;
+
+    margin-bottom: 2rem;
+
+    aspect-ratio: 16/9;    
+
+}
+
+/*Descrição Video Alunos*/
+.descricaoVideosAlunos{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+
+/*Esconde a Descrição do Video do Aluno*/
+.esconderDescricaoVideosAlunos{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*curiosidades*/
+.containerCuriosidades{
+    max-width: 90vw; 
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    overflow-x: auto;
+
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 3rem;
+       
+    /*flex-wrap: wrap;
+    Propriedade Quebra para a Outra Linha*/
+    
+    
+}
+
+
+
+.itemCuriosidades{
+    border: 5px solid black; 
+    height: 11rem;
+    width: 17.5rem;
+    
+
+    flex-shrink: 0;
+    aspect-ratio: 16/9;    
+}
+
+
+
+
+
+
+.legendaCuriosidades{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+    text-align: center;
+    width: 16.5rem;
+    height: auto;
+    margin-bottom: 2rem;
+
+    /*Limita o Texto em Duas Linhas
+    Adicionando Reticências*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+
+}
+
+/*Descriçã Curiosidade*/
+.descricaoVideosCuriosidades{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+
+/*Esconde a Descrição ds Videos Curiosidades*/
+.esconderDescricaoVideosCuriosidades{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*Rodapé*/
+
+/*Linha do Rodape*/
+.linhaRodape{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+
+/*Container do Rodapé*/
+.containerLinkDev{
+    display: flex;   
+    justify-content: center;    
+    
+}
+
+.containerAltoral{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+}
+
+
+
+
+
+/*Itens do Contener/Rodape*/
+.altoral{
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+       
+}
+
+
+/*Link Equipe Dev*/
+.linkDev{
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: blue;         
+    
+    /*"!important"Forçar a Propriedade a Execultar*/
+    
+    
+}
+
+
+
+
+
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }  
+
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 3.7rem;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    h3{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 3.1rem;        
+        text-align: center; 
+        font-weight: bold;       
+    }
+    
+    h5{
+        font-size: 2.9rem;        
+        text-align: center;
+    }
+
+
+
+
+
+
+
+    /*Menu*/
+    .containerUl{
+        display: block;
+        width: 100vw;        
+        list-style: none;
+
+    }
+
+    .itemLiInicial{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        border-radius: 60px;               
+
+    } 
+    
+    
+    .itemLiLogin{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        border-radius: 60px;               
+
+    }    
+
+
+    .itemLi{         
+        width:75%;
+        height: 8rem; 
+        margin: 0 auto; 
+        margin-top: 2rem;
+        border-radius: 600px;
+
+    }
+
+    .itemTagA{
+        font-size: 3.1rem;
+        text-decoration: none;    
+    
+    }
+
+
+    
+
+
+
+    /*Pargrafo*/
+    .itemParagrafo{
+        width: 93%;
+        height: auto;
+        padding: 3rem;
+        
+        border: 5px solid blueviolet;   
+    }
+
+
+    p{
+        font-size: 2.7rem;
+        text-align: justify;
+        width: 85% !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: 3.5rem;
+    }
+
+
+
+    /*Galeria - Fotos*/
+    .containerFotosAlunos{ 
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 1.5rem;
+        row-gap: 3rem;
+        margin-bottom: 3rem;
+        
+        
+        /*flex-wrap: wrap;
+        Propriedade Quebra para a Outra Linha*/
+        overflow-x: auto;
+        
+        
+    }
+
+
+
+    .itemFotosAlunos{
+        border: 0px solid black;    
+        height: 32rem;
+        width: 32rem;
+        flex-shrink: 0;
+        margin-bottom: 10rem;
+        
+        
+    }
+
+
+
+    /*Galeria - Videos*/
+    .containerVideosAlunos{ 
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+        text-align: center;
+        
+        
+        flex-wrap: wrap;
+        /*Propriedade Quebra para a Outra Linha*/
+        
+        
+    }
+
+
+
+    .itemVideosAlunos{
+        border: 1.5px solid black;    
+        height: 25rem;
+        width: 40rem;
+        flex-shrink: 0;
+        margin-bottom: 10rem;
+
+        
+    }
+
+
+
+
+
+
+    /*Imagens do Perfil*/
+    .containerImagemPerfil{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;        
+        
+    }
+
+    .itemImagemPerfil{        
+        border: 0px solid black;    
+        height: 40rem;
+        width: 90%;
+        align-items: center;
+        margin-bottom: 2rem;
+        
+             
+        
+    }
+
+    .legendaImagemPerfil{
+        font-size: 2.5rem;
+        font-weight: bold;          
+        text-align: center;
+        margin-bottom: 8rem;
+
+        width: 100%;
+        height: auto;
+        
+    }
+
+
+
+    /*curiosidades*/
+    .containerCuriosidades{ 
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+        row-gap: 1.5rem;
+       
+        margin-bottom: 1rem;
+        text-align: center;
+        
+        
+        flex-wrap: wrap;
+        /*Propriedade Quebra para a Outra Linha*/
+        
+        
+    }
+
+
+
+    .itemCuriosidades{
+        border: 0px solid black;    
+        height: 30rem;
+        width: 90%;
+        margin-bottom: 2rem;
+        
+        
+
+        
+    }
+
+
+    .legendaCuriosidades{
+        font-size: 2.5rem;
+        font-weight: bold;          
+        text-align: center;
+        margin-bottom: 8rem;
+        width: 100%;
+        height: auto;
+
+    }
+
+
+
+
+
+    /*Botão Voltar Topo*/
+    .btnVoltarTopo{        
+        font-size: 2.7rem;
+        text-align: center; 
+        padding: 50px 100px;
+        border-radius: 20px;       
+    }
+
+
+
+    
+    
+    /*Itens do Contener/Rodape*/
+    .altoral{
+        font-size: 2.5rem;
+        text-align: center;
+        
+    }
+
+
+    .linkDev{
+        font-size: 2.5rem;
+       text-align: center;           
+        
+    } 
+
+    
+}
+
+
+
+
+
+
+@media (max-width: 1024px) and (orientation: portrait) {
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }  
+
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 3.7rem;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    h3{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 3.1rem;        
+        text-align: center; 
+        font-weight: bold;       
+    }
+    
+    h5{
+        font-size: 2.9rem;        
+        text-align: center;
+    }
+
+
+
+
+
+
+
+    /*Menu*/
+    .containerUl{
+        display: block;
+        width: 100vw;        
+        list-style: none;
+
+    }
+
+    .itemLiInicial{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        border-radius: 60px;               
+
+    } 
+    
+    
+    .itemLiLogin{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        border-radius: 60px;               
+
+    }    
+
+
+    .itemLi{         
+        width:75%;
+        height: 8rem; 
+        margin: 0 auto; 
+        margin-top: 2rem;
+        border-radius: 600px;
+
+    }
+
+    .itemTagA{
+        font-size: 3.1rem;
+        text-decoration: none;    
+    
+    }
+
+
+    
+
+
+
+    /*Pargrafo*/
+    .itemParagrafo{
+        width: 93%;
+        height: auto;
+        padding: 3rem;
+        
+        border: 5px solid blueviolet;   
+    }
+
+
+    p{
+        font-size: 2.7rem;
+        text-align: justify;
+        width: 85% !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: 3.5rem;
+    }
+
+
+
+    /*Galeria - Fotos*/
+    .containerFotosAlunos{ 
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 1.5rem;
+        row-gap: 3rem;
+        margin-bottom: 3rem;
+        
+        
+        /*flex-wrap: wrap;
+        Propriedade Quebra para a Outra Linha*/
+        overflow-x: auto;
+        
+        
+    }
+
+
+
+    .itemFotosAlunos{
+        border: 0px solid black;    
+        height: 32rem;
+        width: 32rem;
+        flex-shrink: 0;
+        margin-bottom: 10rem;
+        
+        
+    }
+
+
+
+    /*Galeria - Videos*/
+    .containerVideosAlunos{ 
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+        text-align: center;
+        
+        
+        flex-wrap: wrap;
+        /*Propriedade Quebra para a Outra Linha*/
+        
+        
+    }
+
+
+
+    .itemVideosAlunos{
+        border: 1.5px solid black;    
+        height: 25rem;
+        width: 40rem;
+        flex-shrink: 0;
+        margin-bottom: 10rem;
+
+        
+    }
+
+
+
+
+
+
+    /*Imagens do Perfil*/
+    .containerImagemPerfil{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;        
+        
+    }
+
+    .itemImagemPerfil{        
+        border: 0px solid black;    
+        height: 40rem;
+        width: 90%;
+        align-items: center;
+        margin-bottom: 2rem;
+        
+             
+        
+    }
+
+    .legendaImagemPerfil{
+        font-size: 2.5rem;
+        font-weight: bold;          
+        text-align: center;
+        margin-bottom: 8rem;
+
+        width: 100%;
+        height: auto;
+        
+    }
+
+
+
+    /*curiosidades*/
+    .containerCuriosidades{ 
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+        row-gap: 1.5rem;
+       
+        margin-bottom: 1rem;
+        text-align: center;
+        
+        
+        flex-wrap: wrap;
+        /*Propriedade Quebra para a Outra Linha*/
+        
+        
+    }
+
+
+
+    .itemCuriosidades{
+        border: 0px solid black;    
+        height: 30rem;
+        width: 90%;
+        margin-bottom: 2rem;
+        
+        
+
+        
+    }
+
+
+    .legendaCuriosidades{
+        font-size: 2.5rem;
+        font-weight: bold;          
+        text-align: center;
+        margin-bottom: 8rem;
+        width: 100%;
+        height: auto;
+
+    }
+
+
+
+
+
+    /*Botão Voltar Topo*/
+    .btnVoltarTopo{        
+        font-size: 2.7rem;
+        text-align: center; 
+        padding: 50px 100px;
+        border-radius: 20px;       
+    }
+
+
+
+    
+    
+    /*Itens do Contener/Rodape*/
+    .altoral{
+        font-size: 2.5rem;
+        text-align: center;
+        
+    }
+
+
+    .linkDev{
+        font-size: 2.5rem;
+       text-align: center;           
+        
+    } 
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

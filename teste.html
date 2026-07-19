@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/teste.css">
+</head>
+
+<body>
+
+
+
+    <div class="galeria">
+
+
+
+        <div>
+            <img class="galeria-item" src="Imagens/imagemGaleriaFotoAluno/alunoFoto8.jpeg" alt="" width="100%"
+                height="100%" />
+        </div>
+
+        <div>
+            <img class="galeria-item" src="Imagens/imagemGaleriaFotoAluno/alunoFoto9.jpeg" alt="" width="100%"
+                height="100%" />
+        </div>
+
+        <div>
+            <img class="galeria-item" src="Imagens/imagemGaleriaFotoAluno/alunoFoto10.jpeg" alt="" width="100%"
+                height="100%" />
+        </div>
+
+        <div>
+            <img class="galeria-item" src="Imagens/imagemGaleriaFotoAluno/alunoFoto11.jpeg" alt="" width="100%"
+                height="100%" />
+        </div>
+
+    </div>
+
+
+
+    <div id="modal" class="modal">
+        <span id="fechar" class="fechar">&times;</span>
+        <img id="modal-img" class="modal-conteudo" alt="Imagem Ampliada">
+    </div>
+
+
+
+
+    <form>
+        <div>
+            <fieldset>
+                <legend>* Evacuação:</legend>
+                <input type="checkbox" id="ckNormal" name="ckEvacuacao" value="normal" />
+                <label for="ckNormal">Normal</label>
+                <br>
+                <input type="checkbox" id="ckConstipacao" name="ckEvacuacao" value="constipacao" />
+                <label for="ckConstipacao">Constipação</label>
+<br>
+                <input type="checkbox" id="ckDiarreia" name="ckEvacuacao" value="diarreia" />
+                <label for="ckDiarreia">Diarréia</label>
+                <br>
+                <input type="checkbox" id="ckFezesBolinhas" name="ckEvacuacao" value="fezesBolinhas" />
+                <label for="ckFezesBolinhas">Fezes em Bolinhas</label>
+<br>
+                <input type="checkbox" id="ckFezesPedaços" name="ckEvacuacao" value="fezesPedaços" />
+                <label for="ckFezesPedaços">Fezes c/ Pedaços de Alimentos</label>
+                <br>
+                <input type="checkbox" id="ckIntestinoIrritável" name="ckEvacuacao" value="intestinoIrritável" />
+                <label for="ckIntestinoIrritável">Intestino Irritável</label>
+<br>
+                <input type="checkbox" id="ckOdorForte" name="ckEvacuacao" value="odorForte" />
+                <label for="ckOdorForte">Odor Forte</label>
+<br>
+                <input type="checkbox" id="ckSemOdor" name="ckEvacuacao" value="semOdor" />
+                <label for="ckSemOdor">Sem Odor</label>
+
+            </fieldset>
+        </div>
+        <div>
+            <label for="txtObservacao">* Observação:</label>
+            <input type="text" id="txtObservacao" required />
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+    <script src="ampliarFoto.js"></script>
+
+
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,85 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Acompanhamento Paciente</title>
+        <link rel="stylesheet" href="css/acompanhamentoPaciente.css" />
+    </head>
+    <body>
+        
+        <div class="container-switch">
+            <label class="switch" for="theme-toggle">
+                <span id="switch-label">Modo Escuro</span>
+                <input type="checkbox" id="theme-toggle" role="switch" aria-labelledby="switch-label"
+                    aria-checked="false">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <main>
+            
+            <div class="containerTitulos">     
+                <h1>Acompanhamento do Paciente</h1>
+                
+                <h2>Ambulatório de Massoterapia</h2>
+            </div>  
+        
+            <h4>Ficha de Acompanhamento do Paciente:</h4>
+                
+            <form id="formAcompanhamentoPaciente" class="form">
+                
+                <div>
+                    <label for="txtNomePaciente">* Nome do Paciente:</label>                
+                    <input type="text" id="txtNomePaciente" required />
+                </div>
+                        
+                <div>
+                    <label for="txtDataAtendimento">* Data do Atendimento:</label>
+                    <input type="date" id="txtDataAtendimento" required />                
+                </div>
+                        
+                <div>
+                    <label for="txtNomeTerapeuta">* Nome do Terapeuta:</label>
+                    <input type="text" id="txtNomeTerapeuta" required />
+                </div>
+                            
+                <div>
+                    <label for="txtSupervisorEstagio">* Supervisor do Estágio:</label>
+                    <input type="text" id="txtSupervisorEstagio" required />
+                </div>
+                
+                <div>                
+                    <label for="txtMensagem">* Relatório do Terapeuta</label>
+                    <textarea class="textArea" name="txtRelatorioPaciente" id="txtMensagem" 
+                    placeholder="Escreva seu Relatório" required></textarea>                
+                </div>
+
+                <div class="containerButton">            
+                    <button type="submit" id="btnSubmit" class="button">Cadastrar</button>
+                </div>
+
+            </form>
+                
+            <div id="divMensagem" role="alert" aria-live="assertive"></div>
+            
+            <div class="containerVoltar">        
+              <a class="voltar" href="javascript:history.back()">Voltar</a>            
+            </div> 
+
+            <button class="btnVoltarTopo" id="btnVoltarTopo"  aria-label="Voltar Para o Topo"  title="Voltar para o topo">
+                Topo
+            </button>
+
+        </main> 
+
+        
+        <!--Script-->
+        <script defer ype="module" src="dist/acompanhamentoPaciente.js"></script>
+
+        <script defer type="module" src="dist/voltarTopo.js"></script>
+
+        <script defer type="module" src="dist/modoEscuro.js"></script>
+
+    </body>    
+    
+</html>
