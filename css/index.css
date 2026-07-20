@@ -665,7 +665,7 @@ width: auto;
 
 
 /*Esconde a Descrição das Fotos do Aluno*/
-.esconderDescricaoFotosAluno{
+.esconderDescricaoFotosAlunos{
     position: absolute;
     width: 1px;
     height: 1px;
