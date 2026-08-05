@@ -6,8 +6,8 @@
 
 
 html, body{
-    /*Retira o Balancinho Horizontal do Codigo*/
-    overflow-x: hidden;
+    /*Retira o Balancinho Horizontal do Codigo
+    overflow-x: hidden;*/
     scroll-behavior: smooth;
 }
 
@@ -399,6 +399,7 @@ fieldset{
 
 
 
+/*Botão Cadastrar*/
 .containerButton{
     display: flex;
     justify-content: center;
