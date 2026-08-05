@@ -425,15 +425,6 @@ h5{
 
 
 
-
-
-
-
-
-
-
-
-
 /*Paragrafo*/
 .containerParagrafo{
     display: block;
@@ -467,6 +458,9 @@ p{
 
 
 
+
+
+
 /*Botão Voltar Topo*/
 .btnVoltarTopo{
     position: fixed;
@@ -474,8 +468,9 @@ p{
     right: 3rem;
     z-index: 99999;
 
-    border: 3px solid red;   
-    color: red;
+    border: 5px solid blueviolet;
+    background-color: white;   
+    color: blueviolet;
     font-size: 0.8rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
@@ -483,10 +478,16 @@ p{
     cursor: pointer;
     border-radius: 50px;
     text-align: center;
-    padding: 12px 2px;
-       
+    padding: 7px 5px;       
     
 }
+
+
+.btnVoltarTopo:hover{
+    transform: scale(1.2);
+}
+
+
 
 
 
@@ -503,6 +504,8 @@ p{
     right: 3rem;
     z-index: 9999;
 }*/
+
+
 
 
 

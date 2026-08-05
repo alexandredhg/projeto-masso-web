@@ -294,23 +294,21 @@ h5{
 /*Botão Voltar Topo*/
 .btnVoltarTopo{
     position: fixed;
-    bottom: 5rem;
-    left: 3rem;
+    bottom: 7rem;
+    right: 3rem;
     z-index: 99999;
 
-    border: 3px solid red;   
-    color: red;
+    border: 5px solid blueviolet;
+    background-color: white;   
+    color: blueviolet;
     font-size: 0.8rem;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
     /*border: none;*/
     cursor: pointer;
     border-radius: 50px;
     text-align: center;
-    padding: 12px 2px;
-    
-    transition: transform 0.2s ease;
+    padding: 7px 5px;       
     
 }
 
@@ -318,7 +316,6 @@ h5{
 .btnVoltarTopo:hover{
     transform: scale(1.2);
 }
-
 
 
 

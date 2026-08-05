@@ -258,6 +258,55 @@ p{
 
 
 
+/*Botão Voltar Topo*/
+.btnVoltarTopo{
+    position: fixed;
+    bottom: 7rem;
+    right: 3rem;
+    z-index: 99999;
+
+    border: 5px solid blueviolet;
+    background-color: white;   
+    color: blueviolet;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    /*border: none;*/
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    padding: 7px 5px;       
+    
+}
+
+
+.btnVoltarTopo:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+/*.voltarTopo{
+    display: flex;
+    justify-content: left;
+    
+    margin-bottom: 2.5rem;
+    margin-top: 10rem;
+    margin-left: 4rem;
+    
+    position: fixed;
+    bottom: 7rem;
+    right: 3rem;
+    z-index: 9999;
+}*/
+
+
+
+
+
+
 
 
 @media (max-width: 800px) {
