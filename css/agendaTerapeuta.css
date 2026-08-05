@@ -313,6 +313,48 @@ p{
 
 
 
+/*Botão Voltar*/
+.containerVoltar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    margin-bottom: 2rem;
+}
+
+
+
+.voltar{
+    width: 20rem;
+    height: auto;
+    padding: 10px 0px;
+
+    text-decoration: none;  
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold; 
+    color: coral; 
+    transition: transform 0.2s ease; 
+    
+    display: inline-block;   
+       
+    border: 5px solid coral;
+    border-radius: 0.5rem;       
+    text-align: center;
+    
+    
+}
+
+/* ADICIONADO O HOVER DO BOTÃO VOLTAR */
+.voltar:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
 
 
 
