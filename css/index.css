@@ -530,10 +530,16 @@ p{
     cursor: pointer;
     border-radius: 50px;
     text-align: center;
-    padding: 7px 5px;
-       
+    padding: 7px 5px;       
     
 }
+
+
+.btnVoltarTopo:hover{
+    transform: scale(1.2);
+}
+
+
 
 
 
