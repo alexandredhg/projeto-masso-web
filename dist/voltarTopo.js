@@ -1,7 +1,7 @@
 var _a;
 // script.ts
 window.onscroll = function () {
-    /*scrollFunction();*/
+    scrollFunction();
 };
 function scrollFunction() {
     const btnVoltarTopo = document.getElementById("btnVoltarTopo");

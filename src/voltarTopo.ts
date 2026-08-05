@@ -1,6 +1,6 @@
 // script.ts
 window.onscroll = function(): void {
-    /*scrollFunction();*/
+    scrollFunction();
 };
 
 function scrollFunction(): void {
