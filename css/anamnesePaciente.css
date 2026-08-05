@@ -103,7 +103,7 @@ html, body{
 
 
 
-/*Modp Escuro*/
+/*Modo Escuro*/
 /* ==========================================================================
    CONFIGURAÇÃO DE ACESSIBILIDADE E VARIÁVEIS - MODO ESCURO (FIXO)
    ========================================================================== */
@@ -151,9 +151,10 @@ body.dark-mode {
     position: relative;
     user-select: none;
 
-    border: 5px  solid  black;
+    border: 5px  solid  gray;
     border-radius: 0.7rem;
     margin-left: 0rem;
+    margin-right: 3rem;
     padding: 10px 20px;
 }
 
