@@ -520,9 +520,9 @@ p{
     right: 3rem;
     z-index: 99999;
 
-    border: 5px solid red;
-    background-color: white;   
-    color: red;
+    border: 0px solid blueviolet;
+    background-color: blueviolet;   
+    color: white;
     font-size: 0.8rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
@@ -530,7 +530,7 @@ p{
     cursor: pointer;
     border-radius: 50px;
     text-align: center;
-    padding: 6px 4px;
+    padding: 7px 5px;
        
     
 }
