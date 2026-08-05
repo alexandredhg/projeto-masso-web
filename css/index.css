@@ -154,7 +154,7 @@ body.dark-mode {
     position: relative;
     user-select: none;
 
-    border: 5px  solid  black;
+    border: 5px  solid  gray;
     border-radius: 0.7rem;
     margin-left: 0rem;
     margin-right: 3rem;
@@ -520,9 +520,9 @@ p{
     right: 3rem;
     z-index: 99999;
 
-    border: 5px solid blue;
+    border: 5px solid red;
     background-color: white;   
-    color: blue;
+    color: red;
     font-size: 0.8rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
