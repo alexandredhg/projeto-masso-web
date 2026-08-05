@@ -520,9 +520,9 @@ p{
     right: 3rem;
     z-index: 99999;
 
-    border: 0px solid blueviolet;
-    background-color: blueviolet;   
-    color: white;
+    border: 5px solid blueviolet;
+    background-color: white;   
+    color: blueviolet;
     font-size: 0.8rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
