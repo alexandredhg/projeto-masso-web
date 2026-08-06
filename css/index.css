@@ -1033,7 +1033,8 @@ width: auto;
 
     .itemLi{         
         width:75%;
-        height: 8rem; 
+        height: 8rem;
+        border: 5px solid  black; 
     
         margin-top: 2rem;
         border-radius: 10px;
