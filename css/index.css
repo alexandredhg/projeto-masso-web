@@ -947,7 +947,8 @@ width: auto;
     .btnVoltarTopo{
         width: 5rem;
         height: 1.5rem;
-        margin-right: 1rem;
+        margin-right: 0.4rem;
+        padding: 5rem 2rem;
     }
 
 
