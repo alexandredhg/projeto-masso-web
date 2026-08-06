@@ -947,9 +947,12 @@ width: auto;
     .btnVoltarTopo{
         
         
-        margin-right: 0.4rem;
+        right: 5px;
+        bottom: 5px;
         padding: 5rem 2rem;
-        font-size: 5rem;
+        font-size: 1rem;
+        width: 20px;
+        height: 20px;
     }
 
 
@@ -960,7 +963,7 @@ width: auto;
 
 
     h1{
-        font-size: 3.7rem;
+        font-size: 2rem;
         text-align: left;
     }
 
