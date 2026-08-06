@@ -946,6 +946,7 @@ width: auto;
 
     .btnVoltarTopo {
         font-size: 1rem;
+        border-radius: 50px;
     }     
        
         
@@ -965,10 +966,11 @@ width: auto;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        font-weight: bold;
     }
 
     h2{
-        font-size: 2.7rem;
+        font-size: 2.9rem;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -976,16 +978,17 @@ width: auto;
     }
 
     h3{
-        font-size: 2.2rem;
+        font-size: 2.6rem;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
 
     h4{
-        font-size: 3.1rem;        
+        font-size: 2.3rem;        
         text-align: center; 
-        font-weight: bold;       
+        margin-left: auto;
+        margin-right: auto;       
     }
     
     h5{
