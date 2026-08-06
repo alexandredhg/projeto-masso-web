@@ -946,10 +946,14 @@ width: auto;
 
     .btnVoltarTopo {
         font-size: 1rem;
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         color: white;
         background-color: red;
+
+        border: none;
+        bottom: auto;
+        right: auto;
     }     
        
         
