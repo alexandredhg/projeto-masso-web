@@ -1006,8 +1006,8 @@ width: auto;
     /*Menu*/
     .containerUl{
         display: block;
-        width: 100vw;        
-        list-style: none;
+       margin-left: auto;
+       margin-right: auto;
 
     }
 
@@ -1052,7 +1052,7 @@ width: auto;
 
     /*Pargrafo*/
     .itemParagrafo{
-        width: 93%;
+        width: 95%;
         
         
           
@@ -1060,11 +1060,11 @@ width: auto;
 
 
     p{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-align: justify;
         
-        margin-left: auto;
-        margin-right: auto;
+        
+        
         text-indent: 3.5rem;
     }
 
