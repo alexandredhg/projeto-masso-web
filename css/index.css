@@ -953,6 +953,7 @@ width: auto;
         font-size: 0.5rem;
         width: 20px;
         height: 50px;
+        line-height: 50px;
     }
 
 
@@ -965,8 +966,8 @@ width: auto;
     h1{
         font-size: 3rem;
         text-align: center;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     h2{
