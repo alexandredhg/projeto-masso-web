@@ -1009,26 +1009,43 @@ width: auto;
        flex-direction: column;
        justify-content: center;
        align-items: center;
+       row-gap: 2rem;
 
     }
 
-    .itemLiInicial{        
-        width:75%;
-        height: 8rem;
-        margin: 0 auto;
-        border-radius: 10px;               
 
-    } 
+
     
     
-    .itemLiLogin{        
-        width:75%;
-        height: 8rem;
-        margin: 0 auto;
-        margin-top: 2rem;
-        border-radius: 60px;               
+    .itemLiLogin{
+        width:85%;
+        height:6rem;
+        border: 5px solid  coral;
+        text-align: center;
+    
+         
+       
+        border-radius: 15px;
+        padding: 20px 0px;
+        
 
-    }    
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+                     
+
+    }  
+
+
+
+    .itemTagLogin{
+        font-size: 2rem;
+            
+    
+    }
+    
+    
+
 
 
     .itemLi{         
