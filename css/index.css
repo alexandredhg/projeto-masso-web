@@ -946,7 +946,8 @@ width: auto;
 
     .btnVoltarTopo {
         font-size: 1rem;
-        border-radius: 50px;
+        width: 8rem;
+        height: 8rem;
     }     
        
         
