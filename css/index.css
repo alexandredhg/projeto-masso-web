@@ -949,7 +949,7 @@ width: auto;
         height: 1.5rem;
         margin-right: 0.4rem;
         padding: 5rem 2rem;
-        font-size: 1rem;
+        font-size: 5rem;
     }
 
 
@@ -960,8 +960,8 @@ width: auto;
 
 
     h1{
-        font-size: 3.7rem;
-        text-align: center;
+        font-size: 7rem;
+        text-align: left;
     }
 
     h2{
