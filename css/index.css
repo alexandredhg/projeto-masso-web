@@ -1033,12 +1033,12 @@ width: auto;
 
     .itemLi{         
         width:75%;
-        height: 8rem;
-        border: 5px solid  black; 
+        height:58rem;
+        border: 5px solid  blueviolet; 
     
         margin-top: 2rem;
         border-radius: 10px;
-        font-size: 1.7rem;
+        font-size: 2.6rem;
 
         display: flex;
         justify-content: center;
