@@ -944,16 +944,14 @@ width: auto;
 
 
 
-    .btnVoltarTopo{
-        
+    .btnVoltarTopo {
+        font-size: 1rem;
+    }     
+       
         
        
-       
         
-        width: 5rem;
-        height: 5rem;
-        
-    }
+    
 
 
 
