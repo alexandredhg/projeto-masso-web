@@ -952,8 +952,8 @@ width: auto;
         background-color: red;
 
         border: none;
-        bottom: auto;
-        right: auto;
+        bottom: 10px;
+        right: 10px;
     }     
        
         
