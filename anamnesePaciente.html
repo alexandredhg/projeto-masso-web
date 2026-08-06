@@ -535,37 +535,38 @@
                             <legend>* Temperamento/Personalidade:</legend>
                             <div class="containerCheckBox">
 
-                                <label class="labelCk" for="ckF">
-                                    <input class="inputCk" type="checkbox" id="ckF" name="ckTemperamento" value="f" />
-                                    (F) Figado
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckF" name="ckTemperamento" value="f" />
+                                    <label for="ckF">(F) Figado</label>
+                                </div>
+                                
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckC" name="ckTemperamento" value="c" />
+                                    <label for="ckC">(C) Coração</label>
+                                </div>
 
-                                <label class="labelCk" for="ckC">
-                                    <input class="inputCk" type="checkbox" id="ckC" name="ckTemperamento" value="c" />
-                                    (C) Coração
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckP" name="ckTemperamento" value="p" />
+                                    <label for="ckO">(P) Pulmão</label>
+                                </div>
 
-                                <label class="labelCk" for="ckO">
-                                    <input class="inputCk" type="checkbox" id="ckP" name="ckTemperamento" value="p" />
-                                    (P) Pulmão
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckBp" name="ckTemperamento" value="bp" />
+                                    <label for="ckBp">(BP) Baço/Pamcreas</label>
+                                </div>
 
-                                <label class="labelCk" for="ckBp">
-                                    <input class="inputCk" type="checkbox" id="ckBp" name="ckTemperamento" value="bp" />
-                                    (BP) Baço/Pamcreas
-                                </label>
-
-                                <label class="l" for="ckR">
-                                    <input class="inputCk" type="checkbox" id="ckR" name="ckTemperamento" value="r" />
-                                    (R) Rim
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckR" name="ckTemperamento" value="r" />
+                                    <label for="ckR">(R) Rim</label>
+                                </div>
 
                             </div>           
                         </fieldset>
                     
                         <div>
-                            <label for="txtObservacao">* Observação:</label>
-                            <input type="text" id="txtObservacao" required />
+                            <label class="label" for="txtObservacao">* Observação:</label>
+                            <textarea class="textAreaObs" name="txtTemperamentoPersonalidade" id="txtMensagem" 
+                            placeholder="Observação Sobre o Paciente:" required></textarea>                            
                         </div>
                     </div>
 
@@ -575,31 +576,32 @@
                             <legend>* Acuidade Auditiva:</legend>
                             <div class="containerCheckBox">
 
-                                <label class="labelCk" for="ckNormal">
-                                    <input class="inputCk" type="checkbox" id="ckNormal" name="ckAcuidadeAlditiva" value="normal" />
-                                    Normal
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckNormal" name="ckAcuidadeAlditiva" value="normal" />
+                                    <label for="ckNormal">Normal</label>
+                                </div>
 
-                                <label class="labelCk" for="ckDiminuida">
-                                    <input class="inputCk" type="checkbox" id="ckDinibuida" name="ckAcuidadeAlditiva" value="diminuida" />
-                                    Diminuída
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckDinibuida" name="ckAcuidadeAlditiva" value="diminuida" />
+                                    <label for="ckDiminuida">Diminuída</label>
+                                </div>
 
-                                <label class="labelCk" for="ckZumbido">
-                                    <input class="inputCk" type="checkbox" id="ckZumbido" name="ckAcuidadeAlditiva" value="zumbido" />
-                                    Zumbido
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckZumbido" name="ckAcuidadeAlditiva" value="zumbido" />
+                                    <label for="ckZumbido">Zumbido</label>
+                                </div>
 
-                                <label class="labelCk" for="cKDorOuvido">
-                                    <input class="inputCk" type="checkbox" id="cKDorOuvido" name="ckAcuidadeAlditiva" value="dorOuvido" />
-                                    Dor de Ouvido
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="cKDorOuvido" name="ckAcuidadeAlditiva" value="dorOuvido" />
+                                    <label for="cKDorOuvido">Dor de Ouvido</label>
+                                </div>
 
                             </div>                                 
                         </fieldset>                    
                         <div>
-                            <label for="txtObservacao">* Observação:</label>
-                            <input type="text" id="txtObservacao" required />
+                            <label class="label" for="txtObservacao">* Observação:</label>
+                            <textarea class="textAreaObs" name="txtAcuidadeAuditiva" id="txtMensagem" 
+                            placeholder="Observação Sobre o Paciente:" required></textarea>                            
                         </div>
                     </div>
 
@@ -609,46 +611,47 @@
                             <legend>* Acuidade Visual:</legend>
                             <div class="containerCheckBox">
 
-                                <label class="labelCk" for="ckNormal">
-                                    <input class="inputCk" type="checkbox" id="ckNormal" name="ckAcuidadeVisual" value="normal" />
-                                    Normal
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckNormal" name="ckAcuidadeVisual" value="normal" />
+                                    <label for="ckNormal">Normal</label>
+                                </div>
 
-                                <label  class="labelCk">
-                                    <input class="inputCk" type="checkbox" id="ckBaixaVisao" name="ckAcuidadeVisual" value="baixaVisao" />
-                                    Baixa Visão'
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckBaixaVisao" name="ckAcuidadeVisual" value="baixaVisao" />
+                                    <label for="ckBaixaVisao">Baixa Visão'</label>
+                                </div>
 
-                                <label class="labelCk" for="ckCegueira">
-                                    <input class="inputCk" type="checkbox" id="ckCegueira" name="ckAcuidadeVisual" value="cegueira" />
-                                    Cegueira
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckCegueira" name="ckAcuidadeVisual" value="cegueira" />
+                                    <label for="ckCegueira">Cegueira</label>
+                                </div>
                                 
-                                <label class="labelCk" for="ckAstigmatismo">
-                                    <input class="inputCk" type="checkbox" id="ckAstigmatismo" name="ckAcuidadeVisual" value="astigmatismo" />
-                                    Astigmatismo
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckAstigmatismo" name="ckAcuidadeVisual" value="astigmatismo" />
+                                    <label for="ckAstigmatismo">Astigmatismo</label>
+                                </div>
 
-                                <label class="labelCk" for="ckHipermetropia">
-                                    <input class="inputCk" type="checkbox" id="ckHipermetropia" name="ckAcuidadeVisual" value="hipermetropia" />
-                                    Hipermetropia
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckHipermetropia" name="ckAcuidadeVisual" value="hipermetropia" />
+                                    <label for="ckHipermetropia">Hipermetropia</label>
+                                </div>
                                 
-                                <label class="labelCk" for="ckVisãoDupla ">
-                                    <input class="inputCk" type="checkbox" id="ckVisãoDupla" name="ckAcuidadeVisual" value="visãoDupla" />
-                                    Visão Dupla
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckVisãoDupla" name="ckAcuidadeVisual" value="visãoDupla" />
+                                    <label for="ckVisãoDupla ">Visão Dupla</label>
+                                </div>
 
-                                <label class="labelCk" for="ckPrurido">
-                                    <input class="inputCk" type="checkbox" id="ckPrurido" name="ckAcuidadeVisual" value="prurido" />
-                                    Prurido
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckPrurido" name="ckAcuidadeVisual" value="prurido" />
+                                    <label for="ckPrurido">Prurido</label>
+                                </div>
 
                             </div>                                                  
                         </fieldset>                    
                         <div>
-                            <label for="txtObservacao">* Observação:</label>
-                            <input type="text" id="txtObservacao" required />
+                            <label class="label" for="txtObservacao">* Observação:</label>
+                            <textarea class="textAreaObs" name="txtAcuidadeVisual" id="txtMensagem" 
+                            placeholder="Observação Sobre o Paciente:" required></textarea>                            
                         </div>
                     </div>
 
@@ -658,36 +661,37 @@
                             <legend>* Olfato:</legend>
                             <div class="containerCheckBox">
 
-                                <label class="labelCk" for="ckNormal">
-                                    <input class="inputCk" type="checkbox" id="ckNormal" name="ckOlfato" value="normal" />
-                                    Normal
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckNormal" name="ckOlfato" value="normal" />
+                                    <label for="ckNormal">Normal</label>
+                                </div>
 
-                                <label class="labelCk" for="ckDiminuido">
-                                    <input class="inputCk" type="checkbox" id="ckDiminuido" name="ckOlfato" value="diminuido" />
-                                    Diminuido
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckDiminuido" name="ckOlfato" value="diminuido" />
+                                    <label for="ckDiminuido">Diminuido</label>
+                                </div>
 
-                                <label class="labelCk" for="ckObstrucaoFrequente">
-                                    <input class="inputCk" type="checkbox" id="ckObstrucaoFrequente" name="ckOlfato" value="obstrucaoFrequente" />
-                                    Obstrução Nasal Frequente
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckObstrucaoFrequente" name="ckOlfato" value="obstrucaoFrequente" />
+                                    <label for="ckObstrucaoFrequente">Obstrução Nasal Frequente</label>
+                                </div>
                                 
-                                <label class="labelCk" for="ckRinitel">
-                                    <input class="inputCk" type="checkbox" id="ckRinite'" name="ckOlfato" value="rinite" />
-                                    Rinite
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckRinite'" name="ckOlfato" value="rinite" />
+                                    <label for="ckRinitel">Rinite</label>
+                                </div>
 
-                                <label class="labelCk" for="ckSinusite">
-                                    <input class="inputCk" type="checkbox" id="ckSinusite'" name="ckOlfato" value="sinusite" />
-                                    Sinusite
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckSinusite'" name="ckOlfato" value="sinusite" />
+                                    <label for="ckSinusite">Sinusite</label>
+                                </div>
 
                             </div>                                                       
                         </fieldset>                    
                         <div>
-                            <label for="txtObservacao">* Observação:</label>
-                            <input type="text" id="txtObservacao" required />
+                            <label class="label" for="txtObservacao">* Observação:</label>
+                            <textarea class="textAreaObs" name="txtOlfato" id="txtMensagem" 
+                            placeholder="Observação Sobre o Paciente:" required></textarea>                            
                         </div>
                     </div>
                     
@@ -697,51 +701,52 @@
                             <legend>* Respiração:</legend>
                             <div class="containerCheckBox">
 
-                                <label class="labelCk" for="ckNormal">
-                                    <input class="inputCk" type="checkbox" id="ckNormal" name="ckRespiracao" value="normal" />
-                                    Normal
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckNormal" name="ckRespiracao" value="normal" />
+                                    <label for="ckNormal">Normal</label>
+                                </div>
 
-                                <label class="labelCk" for="ckCurta"></label>
-                                    <input class="inputCk" type="checkbox" id="ckCurta" name="ckRespiracao" value="curta" />
-                                    Curta
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckCurta" name="ckRespiracao" value="curta" />
+                                    <label for="ckCurta">Curta</label>
+                                </div>                                
 
-                                <label class="labelCk" for="ckDispnéia">
-                                    <input class="inputCk" type="checkbox" id="ckDispnéia" name="ckRespiracao" value="dispnéia" />
-                                    Dispnéia
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckDispnéia" name="ckRespiracao" value="dispnéia" />
+                                    <label for="ckDispnéia">Dispnéia</label>
+                                </div>
 
-                                <label class="labelCk" for="ckAsma">
-                                    <input class="inputCk" type="checkbox" id="ckAsma" name="ckRespiracao" value="asma" />
-                                    Asma
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckAsma" name="ckRespiracao" value="asma" />
+                                    <label for="ckAsma">Asma</label>
+                                </div>
                                 
-                                <label class="labelCk" for="ckTosse">
-                                    <input class="inputCk" type="checkbox" id="ckTosse" name="ckRespiracao" value="tosse" />
-                                    Tosse
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckTosse" name="ckRespiracao" value="tosse" />
+                                    <label for="ckTosse">Tosse</label>
+                                </div>                                
                                 
-                                <label class="labelCk" for="ckPigarro">
-                                    <input class="inputCk" type="checkbox" id="ckPigarro" name="ckRespiracao" value="pigarro" />
-                                    Pigarro
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckPigarro" name="ckRespiracao" value="pigarro" />
+                                    <label for="ckPigarro">Pigarro</label>
+                                </div>
 
-                                <label class="labelCk" for="ckAlergia">
-                                    <input class="inputCk" type="checkbox" id="ckAlergia" name="ckRespiracao" value="alergia" />
-                                    Alergia
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckAlergia" name="ckRespiracao" value="alergia" />
+                                    <label for="ckAlergia">Alergia</label>
+                                </div>
 
-                                <label class="labelCk" for="ckDesvioSepto">
-                                    <input class="inputCk" type="checkbox" id="ckDesvioSepto" name="ckRespiracao" value="DesvioSepto" />
-                                    Desvio de Septo
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckDesvioSepto" name="ckRespiracao" value="DesvioSepto" />
+                                    <label for="ckDesvioSepto">Desvio de Septo</label>
+                                </div>
 
                             </div>                                                                                        
                         </fieldset>                    
                         <div>
-                            <label for="txtObservacao">* Observação:</label>
-                            <input type="text" id="txtObservacao" required />
+                            <label class="label" for="txtObservacao">* Observação:</label>
+                            <textarea class="textAreaObs" name="txtRespiracao" id="txtMensagem" 
+                            placeholder="Observação Sobre o Paciente:" required></textarea>                            
                         </div>
                     </div>
 
@@ -751,48 +756,57 @@
                             <legend>* Digestão:</legend>
                             <div class="containerCheckBox">
 
-                                <label class="labelCk" for="ckNormal">
-                                    <input class="inputCk" type="checkbox" id="ckNormal" name="ckDigestao" value="normal" />
-                                    Normal
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckNormal" name="ckDigestao" value="normal" />
+                                    <label for="ckNormal">Normal</label>
+                                </div>
 
-                                <label class="labelCk" for="ckLenta">
-                                    <input class="inputCk" type="checkbox" id="ckLenta" name="ckDigestao" value="lenta" />
-                                    Lenta
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckLenta" name="ckDigestao" value="lenta" />
+                                    <label for="ckLenta">Lenta</label>
+                                </div>
 
-                                <label class="labelCk" for="ckRapida">
-                                    <input class="inputCk" type="checkbox" id="ckRapida" name="ckDigestao" value="rapida" />
-                                    Rapida
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckRapida" name="ckDigestao" value="rapida" />
+                                    <label for="ckRapida">Rapida</label>
+                                </div>
                                 
-                                <label class="labelCk" for="ckDistensaoAbdominal">
-                                    <input class="inputCk" type="checkbox" id="ckDistensaoAbdominal" name="ckDigestao" value="distensaoAbdominal" />
-                                    Distensão Abdominal
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckDistensaoAbdominal" name="ckDigestao" value="distensaoAbdominal" />
+                                    <label for="ckDistensaoAbdominal">Distensão Abdominal</label>
+                                </div>
 
-                                <label class="labelCk" for="ckEpigastralgia">
-                                    <input class="inputCk" type="checkbox" id="ckEpigastralgia" name="ckDigestao" value="epigastralgia" />
-                                    Epigastralgia
-                                </label>
+                                <div class="divCk">
+                                    <input type="checkbox" id="ckEpigastralgia" name="ckDigestao" value="epigastralgia" />
+                                    <label for="ckEpigastralgia">Epigastralgia</label>
+                                </div>
 
+                                <div class="divCk">
                                 <input type="checkbox" id="ckAzia" name="ckDigestao" value="azia" />
                                 <label for="ckAzia">Azia</label>
-                                <br>
+                                </div>
+                                
+                                <div class="divCk">
                                 <input type="checkbox" id="ckGostoAmargoBoca" name="ckDigestao" value="gostoAmargoBoca" />
                                 <label for="ckGostoAmargoBoca">Gosto Amargo na Boca</label>
+                                </div>
 
+                                <div class="divCk">
                                 <input type="checkbox" id="ckDorAbdominal" name="ckDigestao" value="dorAbdominal" />
                                 <label for="ckDorAbdominal">Dor Abdominal</label>
+                                </div>
 
+                                <div class="divCk">
                                 <input type="checkbox" id="ckFlatulência" name="ckDigestao" value="flatulência" />
                                 <label for="ckFlatulência">Flatulência</label>
+                                </div>
 
                             </div>                                                                    
                         </fieldset>                    
                         <div>
-                            <label for="txtObservacao">* Observação:</label>
-                            <input type="text" id="txtObservacao" required />
+                            <label class="label" for="txtObservacao">* Observação:</label>
+                            <textarea class="textAreaObs" name="txtDigestao" id="txtMensagem" 
+                            placeholder="Observação Sobre o Paciente:" required></textarea>                            
                         </div>
                     </div>
 
@@ -848,7 +862,7 @@
                         <div>
                             <label class="label" for="txtObservacao">* Observação:</label>
                             <textarea class="textAreaObs" name="txtEvacuacaoPaciente" id="txtMensagem" 
-                                placeholder="Observação Sobre o Paciente:" required></textarea> 
+                            placeholder="Observação Sobre o Paciente:" required></textarea> 
                         </div>
                     </div>
 
@@ -909,7 +923,7 @@
                         <div>
                             <label class="label" for="txtObservacao">* Observação:</label>
                             <textarea class="textAreaObs" name="txtUrinaPaciente" id="txtMensagem" 
-                                    placeholder="Observação Sobre o Paciente:" required></textarea>
+                            placeholder="Observação Sobre o Paciente:" required></textarea>
                         </div>
                     </div>
                                      </div>
@@ -961,7 +975,7 @@
                         <div>
                             <label class="label" for="txtObservacao">* Observação:</label>
                             <textarea class="textAreaObs" name="txtCirculacaoPaciente" id="txtMensagem" 
-                                    placeholder="Observação Sobre o Paciente:" required></textarea> 
+                            placeholder="Observação Sobre o Paciente:" required></textarea> 
                         </div>
                     </div>
                     
@@ -1028,7 +1042,7 @@
                     <div>
                         <label class="label" for="txtObservacao">* Observação:</label>
                         <textarea class="textAreaObs" name="txtSudoresePaciente" id="txtMensagem" 
-                                placeholder="Observação Sobre o Paciente:" required></textarea> 
+                        placeholder="Observação Sobre o Paciente:" required></textarea> 
                     </div>
                 </div>
 
@@ -1042,9 +1056,9 @@
                 
                 <div>
                     <label class="label" for="txtNumeroGestacoes">* Número de Gestações:</label>
-                    <input class="input" type="text" id="txtNumeroGestacoes" required />
+                    <input class="input" type="number" id="txtNumeroGestacoes" required />           
                 </div>
-                <br>           
+                          
                 <div>
                     <fieldset>
                         <legend>* Libido:</legend>
@@ -1072,7 +1086,7 @@
                     <div>
                         <label class="label" for="txtObservacao">* Observação:</label>
                         <textarea class="textAreaObs" name="txtLibidoPaciente" id="txtMensagem" 
-                                placeholder="Observação Sobre o Paciente:" required></textarea> 
+                        placeholder="Observação Sobre o Paciente:" required></textarea> 
                     </div>            
                 </div>
 
