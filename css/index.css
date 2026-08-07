@@ -580,8 +580,7 @@ p{
 
     margin-bottom: 4rem;
 
-    margin-left: 5rem;
-    margin-right: 5rem;
+    
 
     flex-wrap: wrap;
     /*flex-wrap: wrap;
@@ -1208,18 +1207,15 @@ width: auto;
         
     }*/
 
-    .itemImagemPerfil{        
+    /*.itemImagemPerfil{        
         border: 0px solid black;    
         height: 0rem;
         width: 40%;            
         
-    }
+    }/*
 
 
-    .containerImagemPerfil {
-        margin-left: 0rem;
-        margin-right: 0rem;
-    }
+    
 
 
 
