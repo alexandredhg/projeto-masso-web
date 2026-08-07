@@ -1119,7 +1119,8 @@ width: auto;
 
 
     /*Galeria - Fotos*/
-    .containerFotosAlunos{ 
+    .containerFotosAlunos{
+        width: 100%; 
         display: flex;
         flex-direction: row;    
         justify-content: space-evenly;
@@ -1140,8 +1141,8 @@ width: auto;
 
     .itemFotosAlunos{
         border: 0px solid black;    
-        height: 18rem;
-        width: 32rem;
+        height: 20rem;
+        width: 90%;
         flex-shrink: 0;
         margin-bottom: 10rem;
         
@@ -1152,6 +1153,7 @@ width: auto;
 
     /*Galeria - Videos*/
     .containerVideosAlunos{ 
+        width: 100%;
         display: flex;
         flex-direction: column;    
         justify-content: center;
@@ -1172,7 +1174,7 @@ width: auto;
     .itemVideosAlunos{
         border: 1.5px solid black;    
         height: 18rem;
-        width: 32rem;
+        width: 90%;
         flex-shrink: 0;
         margin-bottom: 10rem;
 
@@ -1186,6 +1188,7 @@ width: auto;
 
     /*Imagens do Perfil*/
     .containerImagemPerfil{
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
@@ -1235,7 +1238,7 @@ width: auto;
     .itemCuriosidades{
         border: 0px solid black;    
         height: 18rem;
-        width: 85%;
+        width: 90%;
         margin-bottom: 2rem;
         
         
