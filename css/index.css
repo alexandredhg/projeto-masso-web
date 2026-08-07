@@ -931,7 +931,16 @@ width: auto;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-    }  
+    } 
+
+
+
+
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+     
 
     
 
