@@ -1184,7 +1184,7 @@ p{
         justify-content: center;
         align-items: center;
         column-gap: 1.5rem;*/
-        row-gap: 10rem;
+        row-gap: 3rem;
         text-align: center;
         
         
@@ -1198,8 +1198,8 @@ p{
 
     .itemVideosAlunos{
         border: 2px solid black;    
-        height: 50rem;
-        width: 30%;
+        height: 11rem;
+        width: 80%;
         flex-shrink: 0;
         margin-bottom: 1rem;
 
