@@ -1178,13 +1178,13 @@ p{
 
     /*Galeria - Videos*/
     .containerVideosAlunos{ 
-        width: 100%;
+       /* width: 100%;
         display: flex;
         flex-direction: column;    
         justify-content: center;
         align-items: center;
-        column-gap: 1.5rem;
-        row-gap: 1rem;
+        column-gap: 1.5rem;*/
+        row-gap: 10rem;
         text-align: center;
         
         
@@ -1197,7 +1197,7 @@ p{
 
 
     .itemVideosAlunos{
-        border: 1.5px solid black;    
+        border: 2px solid black;    
         height: 50rem;
         width: 30%;
         flex-shrink: 0;
