@@ -1225,6 +1225,7 @@ width: auto;
        
         
         /*Propriedade Quebra para a Outra Linha*/
+        flex-wrap: wrap;
         
         
     }
@@ -1234,7 +1235,7 @@ width: auto;
     .itemCuriosidades{
         border: 0px solid black;    
         height: 18rem;
-        width: 20rem;
+        width: 85%;
         margin-bottom: 2rem;
         
         
