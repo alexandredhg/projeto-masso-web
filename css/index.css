@@ -1147,9 +1147,9 @@ p{
         flex-direction: row;    
         justify-content: space-evenly;
         align-items: center;*/
-        column-gap: 1.5rem;
+        column-gap: 2rem;
         row-gap: 3rem;
-        margin-bottom: 3rem;
+        margin-bottom: 10rem;
 
          overflow-x: auto;
         
@@ -1165,8 +1165,8 @@ p{
 
     .itemFotosAlunos{
         border: 0px solid black;    
-        height: 15rem;
-        width: 11rem;
+        height: 16rem;
+        width: 12rem;
         flex-shrink: 0;
     
         
