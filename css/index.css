@@ -595,8 +595,8 @@ p{
 
 .itemImagensPerfil{
     border: 0px solid black;    
-    height: 12rem;
-    width: 12rem;
+    height: 11rem;
+    width: 11rem;
     flex-shrink: 0;
     aspect-ratio: 16/9;
     margin-bottom: 1rem;
@@ -1210,12 +1210,12 @@ width: auto;
         
     }*/
 
-    .itemImagemPerfil{        
+    /*.itemImagemPerfil{        
         border: 0px solid black;    
         height: 0rem;
         width: 40%;            
         
-    }
+    }*/
 
 
     
