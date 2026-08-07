@@ -1140,7 +1140,7 @@ width: auto;
 
     .itemFotosAlunos{
         border: 0px solid black;    
-        height: 32rem;
+        height: 18rem;
         width: 32rem;
         flex-shrink: 0;
         margin-bottom: 10rem;
@@ -1171,8 +1171,8 @@ width: auto;
 
     .itemVideosAlunos{
         border: 1.5px solid black;    
-        height: 25rem;
-        width: 40rem;
+        height: 18rem;
+        width: 32rem;
         flex-shrink: 0;
         margin-bottom: 10rem;
 
@@ -1234,7 +1234,7 @@ width: auto;
     .itemCuriosidades{
         border: 0px solid black;    
         height: 18rem;
-        width: 100%;
+        width: 3rem;
         margin-bottom: 2rem;
         
         
