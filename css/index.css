@@ -1218,17 +1218,10 @@ width: auto;
 
     /*curiosidades*/
     .containerCuriosidades{ 
-        display: flex;
-        flex-direction: column;    
-        justify-content: center;
-        align-items: center;
-        row-gap: 1.5rem;
+        width: 100%;
+        row-gap: 1rem;
        
-        margin-bottom: 1rem;
-        text-align: center;
         
-        
-        flex-wrap: wrap;
         /*Propriedade Quebra para a Outra Linha*/
         
         
