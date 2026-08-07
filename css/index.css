@@ -593,8 +593,8 @@ p{
 
 .itemImagensPerfil{
     border: 0px solid black;    
-    height: 12rem;
-    width: 12rem;
+    height: 10rem;
+    width: 10rem;
     flex-shrink: 0;
     aspect-ratio: 16/9;
     margin-bottom: 1rem;
