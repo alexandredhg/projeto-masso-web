@@ -783,19 +783,22 @@ width: auto;
 
 /*curiosidades*/
 .containerCuriosidades{
-    max-width: 100%; 
+    max-width: 100%;
+    height: 20rem;
+    border: 0px  solid  black;
+    padding: 0 2.5rem; 
     display: flex;
     flex-direction: row;    
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 
     overflow-x: auto;
 
     column-gap: 1.5rem;
     row-gap: 2rem;
 
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
     margin-bottom: 3rem;
        
     /*flex-wrap: wrap;
@@ -808,7 +811,7 @@ width: auto;
 
 .itemCuriosidades{
     border: 5px solid black; 
-    height: 11rem;
+    height: auto;
     width: 17.5rem;
     
 
@@ -828,7 +831,7 @@ width: auto;
     text-align: center;
     width: 16.5rem;
     height: auto;
-    margin-bottom: 2rem;
+   
 
     /*Limita o Texto em Duas Linhas
     Adicionando Reticências*/
