@@ -1137,11 +1137,13 @@ width: auto;
         column-gap: 1.5rem;
         row-gap: 3rem;
         margin-bottom: 3rem;
+
+         overflow-x: auto;
         
         
         /*flex-wrap: wrap;
         Propriedade Quebra para a Outra Linha*/
-        overflow-x: auto;
+       
         
         
     }
@@ -1150,8 +1152,8 @@ width: auto;
 
     .itemFotosAlunos{
         border: 0px solid black;    
-        height: 20rem;
-        width: 85%;
+        height: 22rem;
+        width: 30rem;
         flex-shrink: 0;
         margin-bottom: 10rem;
         
