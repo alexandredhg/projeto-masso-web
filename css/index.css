@@ -589,9 +589,9 @@ p{
 
 
 .itemImagensPerfil{
-    border: px solid black;    
-    height: 10rem;
-    width: 10rem;
+    border: 0px solid black;    
+    height: 14rem;
+    width: 14rem;
     flex-shrink: 0;
     aspect-ratio: 16/9;
     margin-bottom: 1rem;
@@ -1193,7 +1193,7 @@ width: auto;
 
 
     /*Imagens do Perfil*/
-    .containerImagemPerfil{
+    /*.containerImagemPerfil{
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
@@ -1201,18 +1201,16 @@ width: auto;
         align-items: center; 
         text-align: center;        
         
-    }
+    }*/
 
     .itemImagemPerfil{        
         border: 0px solid black;    
-        height: 40rem;
-        width: 90%;
-        align-items: center;
-        margin-bottom: 2rem;
-        
-             
+        height: 10rem;
+        width: 10rem;            
         
     }
+
+    
 
     .legendaImagemPerfil{
         font-size: 2.5rem;
