@@ -580,6 +580,9 @@ p{
 
     margin-bottom: 4rem;
 
+    margin-left: 5rem;
+    margin-right: 5rem;
+
     flex-wrap: wrap;
     /*flex-wrap: wrap;
     Propriedade Quebra para a Outra Linha*/
@@ -596,8 +599,7 @@ p{
     aspect-ratio: 16/9;
     margin-bottom: 1rem;
 
-    margin-left: 5rem;
-    margin-right: 5rem;
+    
     
 }
 
