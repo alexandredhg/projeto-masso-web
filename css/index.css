@@ -939,6 +939,8 @@ width: auto;
     body{
         margin-left: 0px;
         margin-right: 0px;
+        overflow-x: hidden;
+    
     }
      
 
