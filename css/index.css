@@ -1151,7 +1151,7 @@ width: auto;
     .itemFotosAlunos{
         border: 0px solid black;    
         height: 20rem;
-        width: 90%;
+        width: 85%;
         flex-shrink: 0;
         margin-bottom: 10rem;
         
