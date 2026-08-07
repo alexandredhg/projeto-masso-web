@@ -590,11 +590,14 @@ p{
 
 .itemImagensPerfil{
     border: 0px solid black;    
-    height: 14rem;
-    width: 14rem;
+    height: 12rem;
+    width: 12rem;
     flex-shrink: 0;
     aspect-ratio: 16/9;
     margin-bottom: 1rem;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
     
 }
 
@@ -1203,14 +1206,14 @@ width: auto;
         
     }*/
 
-    .itemImagemPerfil{        
+    /*.itemImagemPerfil{        
         border: 0px solid black;    
         height: 10rem;
         width: 10rem;            
         
-    }
+    }*/
 
-    
+
 
     .legendaImagemPerfil{
         font-size: 2.5rem;
