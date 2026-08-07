@@ -933,12 +933,7 @@ width: auto;
         box-sizing: border-box;
     }  
 
-    /*body{
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }*/
+    
 
 
 
@@ -1234,8 +1229,8 @@ width: auto;
 
     .itemCuriosidades{
         border: 0px solid black;    
-        height: 20rem;
-        width: 90%;
+        height: 18rem;
+        width: 100%;
         margin-bottom: 2rem;
         
         
