@@ -571,6 +571,7 @@ p{
 /*Imagens do Perfil*/
 .centerItemImagensPerfil{ 
     max-width: 100%;
+    height: auto;
     display: flex;    
     flex-direction: row;
     justify-content: space-evenly;
@@ -579,6 +580,8 @@ p{
     row-gap: 2rem;
 
     margin-bottom: 4rem;
+    padding: 0 15rem;
+    border: 3px  solid  black;
 
     
 
