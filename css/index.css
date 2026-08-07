@@ -1208,17 +1208,17 @@ width: auto;
         
     }*/
 
-    /*.itemImagemPerfil{        
+    .itemImagemPerfil{        
         border: 0px solid black;    
-        height: 10rem;
-        width: 10rem;            
+        height: 0rem;
+        width: 40%;            
         
-    }*/
+    }
 
 
     .containerImagemPerfil {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 
 
