@@ -801,70 +801,125 @@ p{
 /* Container do Grid */
 .containerGridCuriosidades {
     max-width: 100%;
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* Força EXATAMENTE 2 linhas iguais, sem autorizar a 3ª linha */
+    grid-template-rows: repeat(2, minmax(0, 1fr));   
     gap: 15px;
     margin-bottom: 4rem;
 
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     border: 0px  solid  black;
 }
 
 
 
-/* Card padrão do Grid */
-.gridItemCuriosidade {
-    border: 0px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Mantém a legenda colada no rodapé */
-    box-sizing: border-box;
-    background-color: #fff;
-    height: 100%;                  /* Garante que todos os cards da mesma linha tenham a mesma altura */
-}
-
-
 
 /* O Destaque ocupa 2 linhas na primeira coluna */
-.itemGridDestaque {
-    grid-column: 1;
-    grid-row: span 2;
+.itemVideoDestaque {
+    grid-column: 2;
+    grid-row: 1 / span 2; /* Força a ir da linha 1 até o final da linha 2 */
 }
 
 
 
 /* Container do Vídeo: Controla a área do vídeo para não esmagar a legenda */
-.videoGridWrapper {
+.video-wrapper {
     width: 100%;
-    aspect-ratio: 16 / 9;         /* Garante o formato correto de vídeo nos cards normais */
+    aspect-ratio: 16/9;            /* Garante o formato correto de vídeo nos cards normais */
     position: relative;
+    
 }
 
-/* No card destaque, o vídeo cresce para preencher a altura extra */
-.itemDestaque .videoWrapper {
-    flex-grow: 1;                 /* Ocupa o espaço livre restante */
-    aspect-ratio: auto;           /* Remove a limitação de proporção */
-}
-
-/* Estilo do iframe do vídeo */
-.itemGridGCuriosidades {
+.video-wrapper1 {
     width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
+    flex: 1;
+    min-height: 0;             /* Garante o formato correto de vídeo nos cards normais */
+    position: relative;
+
 }
 
 
 
 
+
+/*Segundo Bloco Curiosidade*/ 
+
+/* Container do Grid*/
+
+.containerGridVideosCuriosidades {
+    max-width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Força EXATAMENTE 2 linhas iguais, sem autorizar a 3ª linha */
+    grid-template-rows: repeat(2, auto);  
+    gap: 15px;
+    margin-bottom: 4rem;
+
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+}
+
+
+
+
+.cardVideoCuriosidadeDestaque{
+    border: 0px  solid  red;
+    display: flex;
+    flex-direction: column;
+    width: 100%;;
+    height: 100%;    
+    box-sizing: border-box;
+
+    
+}
+
+
+
+.cardVideoCuriosidade {
+    border: 0px  solid  coral;
+    display: flex;
+    flex-direction: column;
+    width: 100%;;
+    
+    box-sizing: border-box;
+    
+}
+
+
+
+.itemVideoDestaque2 {    
+    grid-column: 1;
+    grid-row: 1 / span 3;
+}
+
+
+
+.itemVideoDestaque3 {    
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+
+
+
+
+
+
+
+
+/*Propriedades em Comum*/
 /* Legendas (SEMPRE VISÍVEIS NA PARTE INFERIOR) */
 .legendaVideosCuriosidades {
     border-top: 0px solid black;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    padding: 8px 5px;
+    padding: 7px  7px;    
     box-sizing: border-box;
     background-color: #fff;
     width: 100%;
@@ -875,7 +930,7 @@ p{
     /* Exibe até 2 linhas com reticências (...) se for muito grande */
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     overflow: hidden;
 }
 
@@ -912,28 +967,12 @@ p{
 
 
 
-/*Segundo Bloco Curiosidade*/ 
-
-/* Container do Grid */
-.containerGridVideosCuriosidades {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 15px;
-    margin-bottom: 4rem;
-
-    margin-left: 5rem;
-    margin-right: 5rem;
-    
-}
 
 
-.test {
-    border: 3px  solid  red;
-    width: 70%;
-    height: 100%;
-}
+
+
+
+
 
 
 
