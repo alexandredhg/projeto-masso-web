@@ -565,7 +565,7 @@ p{
     height: 3rem;
     width: 10rem;
     /*border: none;*/
-    border: 2px solid blue;
+    border: 3px solid blue;
     cursor: pointer; 
     border-radius: 0.5rem;
     margin-bottom: 3rem;
@@ -577,6 +577,32 @@ p{
 .btnEntrar:hover{
     transform: scale(1.2);
 }
+
+
+
+.btnLimpar{  
+    background-color: white;
+    color: red;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    height: 3rem;
+    width: 10rem;
+    /*border: none;*/
+    border: 3px solid red;
+    cursor: pointer; 
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    
+    transition: transform 0.2s ease;
+}
+
+
+.btnLimpar:hover{
+    transform: scale(1.2);
+}
+
+
 
 
 

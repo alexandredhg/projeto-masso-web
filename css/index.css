@@ -722,7 +722,7 @@ p{
 
 
 /*Galeria - Videos*/
-.containerVideosAlunos{
+/*.containerVideosAlunos{
     max-width: 100%;
     height: auto;
     border: 0px  solid  black;
@@ -732,34 +732,60 @@ p{
 
     column-gap: 3rem;
     row-gap: 2.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 4rem;*/
     
     
     
     
-    /*Propriedade Quebra para a Outra Linha*/
-    flex-wrap: wrap;
+    /*Propriedade Quebra para a Outra Linha
+    flex-wrap: wrap;*/
 
    /*Cria uma Barra de Rolagem 
-   overflow-x: auto;*/  
+   overflow-x: auto;  
     
+}*/
+
+
+
+
+
+.containerVideosAlunos {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 5rem repeat(2,1fr);
+    
+    gap: 1rem;
+    column-gap: 1rem;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 
 
-.itemVideosAlunos{
-    border: 2px solid black;
-    height: 11rem;   
-    width: 16.5rem;
-    flex-shrink: 0;
 
-    margin-bottom: 1rem;
 
-    aspect-ratio: 16/9;
-    
+
+.itemVideosAlunos{    
+    border: 5px  solid  red;
+    display: flex;
+    flex-direction: column;
+    width: 80%;;
+    height: 20rem;    
+    box-sizing: border-box;
     
 
 }
+
+
+
+.divider{
+    grid-row: span 2;
+}
+
+
+
 
 /*Descrição Video Alunos*/
 .descricaoVideosAlunos{
