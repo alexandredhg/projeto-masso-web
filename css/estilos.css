@@ -1,0 +1,21 @@
+/*Baner*/
+.containerBaner{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+
+    /*Propriedade Imagem Não Destorcer*/
+    object-fit: cover;
+
+    /*background-image: "imagem/fotoMasso1.jpd";*/
+}
+
+.itemBaner{
+    border: 0px solid black;
+    width: 100vw;
+    height: 23rem;    
+
+}
