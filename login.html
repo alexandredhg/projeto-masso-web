@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login</title>
+    <link rel="stylesheet" href="css/estillos.css">    
     <link rel="stylesheet" href="css/login.css" />
 </head>
 
@@ -99,31 +100,34 @@
 
         <h4>Faça Seu Login:</h4>
 
-        <form id="formLogin" class="centralForm">
+        <div id="divMensagem" role="alert" aria-live="assertive" class="msg"></div>
+
+        <form id="formLogin" class="centerForm">
             <div>
                 <label for="txtEmail">* E-mail:</label>
 
-                <input class="inputEmail" type="email" id="txtEmail" />
+                <input type="email" id="txtEmail" />
             </div>
 
 
-            <div class="containerSenha">
+            <div>
 
-                <label class="labelSen" for="txtSenha">* Senha:</label>
+                <label for="txtSenha">* Senha:</label>
 
-                <input class="inputSenha" type="password" id="txtSenha" />
+                <input type="password" id="txtSenha" />
                 <button type="button" id="toggleSenha" class="btnMostrar">Mostrar</button>
 
-
             </div>
 
 
-            <div>
-                <button type="submit" class="btnEntrar">Entrar</button>
-            </div>
+            <div class="btnContainer">
+                <div>
+                    <button type="submit" class="btnEntrar">Entrar</button>
+                </div>
 
-            <div>
-                <button type="reset" class="btnLimpar">Limpar</button>
+                <div>
+                    <button type="reset" class="btnLimpar">&#x2327; Limpar</button>
+                </div>
             </div>
 
             
@@ -134,7 +138,7 @@
         
         <!--<hr/>-->
 
-        <div id="divMensagem" role="alert" aria-live="assertive" class="msg"></div>
+        
 
 
         <div class="voltarTopo">

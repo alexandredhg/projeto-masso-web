@@ -212,9 +212,9 @@ h4{
     font-size: 1.7rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #4a4a4a;      
-    text-align: left;
-    margin-bottom: 2rem;
-    margin-left: 27.15rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    
 
 
 }
@@ -237,27 +237,6 @@ h5{
 
 
 
-/*Baner*/
-.containerBaner{
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-
-    /*Propriedade Imagem Não Destorcer*/
-    object-fit: cover;
-
-    /*background-image: "imagem/fotoMasso1.jpd";*/
-}
-
-.itemBaner{
-    border: 0px solid black;
-    width: 100vw;
-    height: 23rem;    
-
-}
 
 
 
@@ -556,50 +535,93 @@ p{
 
 
 
+
+/*Formularios*/
+.centerFor{
+    margin-left: 7rem;
+
+}
+
+
+label{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 7rem;      
+
+}
+
+
+
+input{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 20rem;
+    height: auto;
+    padding: 10px 10px;
+    text-align: center;
+    border: 2px  solid  black;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+
+}
+
+
+
+/*Botões*/
+.btnContainer{
+    text-align: center;
+}
+
+
 .btnEntrar{  
-    background-color: white;
-    color: blue;
+    background-color: blue;
+    color: white;
     font-size: 1.3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    height: 3rem;
-    width: 10rem;
+    height: auto;
+    width: 50rem;
+    padding: 12px 12px;
     /*border: none;*/
-    border: 3px solid blue;
+    border: 0px solid blue;
     cursor: pointer; 
-    border-radius: 0.5rem;
-    margin-bottom: 3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
     
-    transition: transform 0.2s ease;
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
 }
 
 
 .btnEntrar:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
 
 .btnLimpar{  
-    background-color: white;
-    color: red;
+    background-color: coral;
+    color: white;
     font-size: 1.3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    height: 3rem;
-    width: 10rem;
+    height: auto;
+    width: 50rem;
+    padding: 12px 12px;
     /*border: none;*/
-    border: 3px solid red;
+    border: 0px solid coral;
     cursor: pointer; 
-    border-radius: 0.5rem;
-    margin-bottom: 3rem;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
     
-    transition: transform 0.2s ease;
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
 }
 
 
 .btnLimpar:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
@@ -612,14 +634,17 @@ p{
     color: white;
     font-size: 0.7rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 2rem;
-    width: 3.2rem;
+    height: auto;
+    width: 3.5rem;
     border: none;
     cursor: pointer;
     border-radius: 0.5rem;
     margin-left: 1rem;
     padding: 5px 5px;
-    transition: transform 0.2s ease;   
+
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+     
         
 }
 
@@ -629,79 +654,10 @@ p{
 }
 
 
-/*Label*/
-label{
-    
-    margin-bottom: 0rem;
-
-    font-size: 1.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    color: #222222;
-    
-}
-
-.labelSenh{
-    display: block;
-    margin-left: 36rem;
-    margin-right: auto;
-    text-align: left;
-    margin-bottom: 0rem;
-}
 
 
 
-
-
-/*Campo Email*/
-.inputEmail{
-    
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #222222;
-    text-align: center;
-    height: 2.5rem;
-    width:21rem;
-    border: 2px solid #222222;
-    border-radius: 0.5rem;
-    margin-left: 0.7rem;
-    margin-bottom: 2rem;
-   
-}
-
-
-
-
-/*Campo Senha*/
-.containerSenha{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3.5rem;
-}
-
-.inputSenha{
-    
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #222222;
-    text-align: center;
-    height: 2.5rem;
-    width: 16.3rem;
-    
-    border: 2px solid #222222;
-    border-radius: 0.5rem;
-    margin-left: 1rem;
-    margin-bottom: 0rem;
-}
-
-
-
-.centralForm{
-    text-align: center;
-}
-
+/*Memsagem*/
 .msg{
     display: block;
     font-size: 1.5rem;
@@ -709,8 +665,6 @@ label{
     text-align: center;
     margin-bottom: 3rem;
 }
-
-
 
 
 

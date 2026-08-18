@@ -39,46 +39,47 @@
 
         <h4>Formulário de Redefinição de Senha:</h4>
 
-        <form id="formRedefinicaoSenha" class="centralForm">           
+        <div id="divMensagem" role="alert" aria-live="assertive" class="msg"></div>
+
+        <form id="formRedefinicaoSenha" class="centerForm">           
 
 
-            <div class="containerSenha">
+            <div>
 
-                <label class="labelSen" for="txtSenha">* Senha:</label>
+                <label for="txtConfSenha">* Senha:</label>
 
-                <input class="inputSenha" type="password" id="txtSenha" />
+                <input type="password" id="txtConfSenha" />
+                <button type="button" id="toggleConfSenha" class="btnMostrar">Mostrar</button>
+
+
+            </div>
+
+            <div>
+
+                <label for="txtSenha">* Confirmar Senha:</label>
+
+                <input type="password" id="txtSenha" />
                 <button type="button" id="toggleSenha" class="btnMostrar">Mostrar</button>
 
 
             </div>
 
-            <div class="containerSenha">
-
-                <label class="labelSen" for="txtSenha">* Confirmar Senha:</label>
-
-                <input class="inputSenha" type="password" id="txtSenha" />
-                <button type="button" id="toggleSenha" class="btnMostrar">Mostrar</button>
-
-
-            </div>
-
-
-           <div class="containerButton">
-                  <button class="button" type="submit" id="btnSubmit">Cadastrar</button>
+            <div class="btnContainer">
+                <div>
+                    <button type="submit" class="btnCadastrar">Entrar</button>
+                
+                    <button type="reset" class="btnLimpar">Limpar</button>
                 </div>
-
-        
-            <!--<div>
-                    <a href="areaRestrita.html"></a>
-                </div> -->
+            </div>
+           
         </form>
         
         <!--<hr/>-->
 
-        <div id="divMensagem" role="alert" aria-live="assertive" class="msg"></div>
+        
 
-         <div class="containerVoltar">        
-                <a class="voltar" href="javaScript: history.back()">Voltar</a>            
+        <div class="containerVoltar">
+                <a class="voltar" href="areaRestritaCoordenacao.html">← Voltar</a>
             </div>
 
 

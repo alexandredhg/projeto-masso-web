@@ -563,45 +563,120 @@ p{
 
 
 
+/*Formularios*/
+/*Formulario*/
+.centerForm{
+    text-align: center;
 
-.btnEntrar{  
-    background-color: white;
-    color: blue;
+}
+
+
+label{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;      
+
+}
+
+
+
+input{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 20rem;
+    height: 2rem;
+    padding: 10px 10px;
+    text-align: center;
+    border: 2px  solid  black;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+
+}
+
+
+
+
+
+
+
+/*Botões*/
+.btnContainer{
+    text-align: center;    
+}
+
+
+
+.btnCadastrar{  
+    background-color: blue;
+    color: white;
     font-size: 1.3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    height: 3rem;
-    width: 10rem;
-    /*border: none;*/
-    border: 2px solid blue;
+    height: auto;
+    width: 15rem;
+    padding: 12px 12px;
+    border: none;
+    border: 0px solid blue;
     cursor: pointer; 
-    border-radius: 0.5rem;
-    margin-bottom: 5rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
     
-    transition: transform 0.2s ease;
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+
 }
 
 
-.btnEntrar:hover{
-    transform: scale(1.2);
+.btnCadastrar:hover{
+    transform: scale(1.1);
+}
+
+
+.btnLimpar{  
+    background-color: coral;
+    color: white;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    height: auto;
+    width: 15rem;
+    padding: 12px 12px;
+    /*border: none;*/
+    border: 0px solid coral;
+    cursor: pointer; 
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.btnLimpar:hover{
+    transform: scale(1.1);
 }
 
 
 
-.btnMostrar{
-        
+
+
+.btnMostrar{        
     background-color: gray;
     color: white;
     font-size: 0.7rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 2rem;
-    width: 3.2rem;
+    height: auto;
+    width: 3.5rem;
     border: none;
     cursor: pointer;
     border-radius: 0.5rem;
     margin-left: 1rem;
     padding: 5px 5px;
-    transition: transform 0.2s ease;   
+
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+      
         
 }
 
@@ -612,77 +687,42 @@ p{
 
 
 
-.containerButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    margin-bottom: 1.2rem;
-}
-
-.button{
-    width: 20rem;
-    height: auto;
-    padding: 10px 0px;
-
-    border: 5px solid blue;    
-    color: blue;
-    background-color: white;
-    font-size: 1.3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-         
-    cursor: pointer;
-    border-radius: 0.5rem;    
-    
-    transition: transform 0.2s ease; /* Correção ortográfica aqui */
-}
-    
-/* REMOVIDO O ESPAÇO ANTES DE :HOVER */
-.button:hover {
-    transform: scale(1.1); /* Ajustado para 1.1 pois 1.5 quebrava muito o layout */
-}
-
-
-
-
 
 
 
 /*Botão Voltar*/
-.containerVoltar{
+.containerVoltar {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
-    margin-bottom: 2rem;
+    overflow: hidden; /* Impede que o crescimento do botão crie barras de rolagem que fazem a tela tremer */
+    padding: 10px;    /* Dá uma folga para o botão crescer sem cortar as bordas */
 }
 
-
-
-.voltar{
-    width: 20rem;
-    height: auto;
-    padding: 10px 0px;
-
-    text-decoration: none;  
+.voltar {
+    box-sizing: border-box; /* Garante que padding e border fiquem DENTRO dos 20rem */
+    display: inline-block;
     font-size: 1.3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold; 
-    color: coral; 
-    transition: transform 0.2s ease; 
     
-    display: inline-block;   
-       
-    border: 5px solid coral;
-    border-radius: 0.5rem;       
+    color: white;
+    background-color: black; 
+    
+    width: 40rem;
+    max-width: 90%; /* Evita estouro em telas pequenas/mobile */
+    height: auto;
+    padding: 12px 12px;
+    border: 0px solid blueviolet;
+    border-radius: 1rem;       
     text-align: center;
-    
-    
+
+    text-decoration: none;
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;    
 }
 
-/* ADICIONADO O HOVER DO BOTÃO VOLTAR */
 .voltar:hover {
     transform: scale(1.1);
 }
@@ -691,86 +731,21 @@ p{
 
 
 
-
-
-/*Label*/
-label{
-    
-    margin-bottom: 0rem;
-
-    font-size: 1.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    color: #222222;
-    
-}
-
-.labelSenh{
-    display: block;
-    margin-left: 36rem;
-    margin-right: auto;
-    text-align: left;
-    margin-bottom: 0rem;
-}
-
-
-
-
-
-/*Campo Email*/
-.inputEmail{
-    
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #222222;
-    text-align: center;
-    height: 2.5rem;
-    width:21rem;
-    border: 2px solid #222222;
-    border-radius: 0.5rem;
-    margin-left: 0.7rem;
-    margin-bottom: 2rem;
-   
-}
-
-
-
-
-/*Campo Senha*/
-.containerSenha{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3.5rem;
-}
-
-.inputSenha{
-    
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #222222;
-    text-align: center;
-    height: 2.5rem;
-    width: 16.3rem;
-    
-    border: 2px solid #222222;
-    border-radius: 0.5rem;
-    margin-left: 1rem;
-    margin-bottom: 0rem;
-}
-
-
-
-.centralForm{
-    text-align: center;
-}
-
+/*Memsagem*/
 .msg{
+    display: block;
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    margin-bottom: 3rem;
 }
+
+
+
+
+
+
+
 
 
 
