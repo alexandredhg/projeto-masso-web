@@ -119,3 +119,59 @@
 
 
 
+/*Rodapé*/
+
+/*Linha do Rodape*/
+.linhaRodape{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+
+/*Container do Rodapé*/
+.containerRodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 17px 0;
+}
+
+
+
+.containerAltoral{
+    margin-bottom: 0.7rem;    
+}
+
+
+/*Container Altoral/Link Desenvolvedor*/
+.containerLinkDev{
+    margin-bottom: 0rem;      
+    
+}
+
+
+
+/*Itens do Contener/Rodape*/
+.itemAltoral{
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+       
+}
+
+
+.itemLinkDev{
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: blue;         
+    
+    /*"!important"Forçar a Propriedade a Execultar*/ 
+}
+
+
+
+

@@ -487,64 +487,6 @@ p{
 
 
 
-/*.voltarTopo{
-    display: flex;
-    justify-content: left;
-    
-    margin-bottom: 2.5rem;
-    margin-top: 10rem;
-    margin-left: 4rem;
-    
-    position: fixed;
-    bottom: 7rem;
-    right: 3rem;
-    z-index: 9999;
-}*/
-
-
-
-
-
-
-/*Container do Rodapé*/
-.containerLinkDev{
-    display: flex;   
-    justify-content: center;    
-    
-}
-
-.containerAltoral{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-
-
-
-
-/*Itens do Contener/Rodape*/
-.altoral{
-    font-size: 0.8rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-       
-}
-
-
-/*Link Equipe Dev*/
-.linkDev{
-    font-size: 0.8rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    color: blue; 
-        
-    
-    /*"!important"Forçar a Propriedade a Execultar*/
-    
-    
-}
-
 
 
 

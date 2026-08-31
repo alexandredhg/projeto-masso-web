@@ -534,58 +534,6 @@ p{
 
 
 
-/*Container do Rodapé*/
-.containerLinkDev{
-    display: flex;   
-    justify-content: center;    
-    
-}
-
-.containerAltoral{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-
-
-
-
-/*Itens do Contener/Rodape*/
-.altoral{
-    font-size: 0.8rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-       
-}
-
-
-/*Link Equipe Dev*/
-.linkDev{
-    font-size: 0.8rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    color: blue; 
-         
-    
-    /*"!important"Forçar a Propriedade a Execultar*/
-    
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
