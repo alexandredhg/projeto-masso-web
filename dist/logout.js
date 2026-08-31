@@ -1,12 +1,15 @@
-const logoutBtn = document.getElementById('logout-btn');
+const logoutBtn = document.getElementById('logoutBtn');
 const divMensagem = document.getElementById("divMensagem");
 logoutBtn.addEventListener('click', (event) => {
     event.preventDefault;
-    divMensagem.textContent = "Encerrar a Sessão!";
+    divMensagem.textContent = "Sessão Encerrada com Sucesso!";
+    divMensagem.style.color = "blue";
     setTimeout(() => {
-        localStorage.clear();
+        /*localStorage.clear();*/
+        localStorage.removeItem("usuarioLogado");
+        sessionStorage.clear();
         window.location.replace("login.html");
-    }, 10000);
+    }, 3500);
 });
 export {};
 //# sourceMappingURL=logout.js.map

@@ -1,15 +1,18 @@
-const logoutBtn = document.getElementById('logout-btn') as HTMLButtonElement;
+const logoutBtn = document.getElementById('logoutBtn') as HTMLButtonElement;
 const divMensagem = document.getElementById("divMensagem") as HTMLDivElement;
 
 logoutBtn.addEventListener('click', (event) => {
   event.preventDefault;
 
-  divMensagem.textContent = "Encerrar a Sessão!"
+  divMensagem.textContent = "Sessão Encerrada com Sucesso!"
+  divMensagem.style.color = "blue";
 
   setTimeout(() => {
-    localStorage.clear();
+    /*localStorage.clear();*/
+    localStorage.removeItem("usuarioLogado");
+    sessionStorage.clear();
     window.location.replace("login.html");
-  }, 10000);
+  }, 3500);
 
 
 });
