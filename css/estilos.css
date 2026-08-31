@@ -1,3 +1,64 @@
+
+/*Auto Reset*/
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    /*Retira o Balancinho Horizontal do Codigo*/
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/*------------------------------------------------------------*/
+
+
+
+
+/*Skip-Link*/
+
+/* Esconder o link da tela por padrão, mas mantém acessível para leitores de tela */
+.skip-link {
+    position: absolute;
+    top: -9999px;
+
+    /*Sobrepoe o Link sobre outro Elemento*/
+    z-index: 100;
+
+    /*Estilo do Botão*/
+    margin-left: 2.5rem;
+    margin-top: 0.7rem;
+    background: #0056b3; /* Cor forte que combine com o design */
+    color: white;
+    padding: 10px 20px;   
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+
+    /*Transição do Botão*/
+    transition: top 0.2s ease-in-out;
+}
+
+/* Mostra o link no topo da tela quando ele recebe o foco do teclado (Tab) */
+.skip-link:focus {
+    top: 0;
+    outline: 2px solid #ffcc00; /* Destaque visual */
+    
+}
+
+
+
+/*--------------------------------------------------------------*/
+
+
+
+
 /*Baner*/
 .containerBaner{
     display: flex;
@@ -23,6 +84,131 @@
 
 
 /*------------------------------------------------------------*/
+
+
+
+/*Menu Geral*/
+.containerUl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    height: 10rem;
+    background-color: lightgray;
+    margin-bottom: 2rem;
+}
+
+
+
+.itemLi{
+    display: inline-block;
+    list-style-type: none;
+    width: auto;
+    height: auto;
+    border: 3px solid blue;
+    border-radius: 1rem;
+    padding: 10px 10px;
+    
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.itemLi:hover{
+    transform: scale(1.07);
+}
+
+
+.aItemLi{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    
+    color: blue;    
+    text-decoration: none;
+}
+
+
+/*Menu Especifico*/
+.itemLiHome{
+    display: inline-block;
+    list-style-type: none;
+
+    width: auto;
+    height: auto;
+    background-color: red;
+    border: 3px solid white;
+    padding: 11px  11px;
+    border-radius: 1rem;
+
+    text-align: center;
+    
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.itemLiHome:hover{
+    transform: scale(1.1);
+}
+
+
+.aItemLiHome{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;    
+    color: white;   
+
+    text-decoration: none;
+}
+
+
+
+.itemLiLogin{
+    display: inline-block;
+    list-style-type: none;
+
+    width: auto;
+    height: auto;
+    background-color: green;
+    
+    border: 3px solid white;
+    padding: 11px  11px;
+    border-radius: 1rem;
+    text-align: center;
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.itemLiLogin:hover{
+    transform: scale(1.1);
+}
+
+
+.aItemLiLogin{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;    
+
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -8,76 +8,20 @@
         <link rel="stylesheet" href="css/estilos.css">
     </head>
 
-    <body>
+    <body>        
+
+        <div class="container-switch">
+            <label class="switch" for="theme-toggle">
+                <span id="switch-label">Modo Escuro</span>
+                <input type="checkbox" id="theme-toggle" role="switch" aria-labelledby="switch-label"
+                    aria-checked="false">
+                <span class="slider"></span>
+            </label>
+        </div>
 
         <header>
-
-            <div class="container-switch">
-                <label class="switch" for="theme-toggle">
-                    <span id="switch-label">Modo Escuro</span>
-                    <input type="checkbox" id="theme-toggle" role="switch" aria-labelledby="switch-label"
-                        aria-checked="false">
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-            <div class="containerBaner">
-
-                <div class="itemBaner">
-                    <img src="Imagens/imagemBaner/imgBanerMasso.jpg" alt="A Imagem Mostra Um Ambiente de Massagem, onde a parede tem um dizer 
-                            'Massoterapia arte do toque e bem estar', tem uma maca com toalhas dobradas 
-                            sobre ela uma prateleira com frascos de óleos" . width="100%" height="100%" />
-                </div>
-
-
-            </div>
-
-            <nav aria-label="Menu Principal">
-                <ul class="containerUl">
-
-                    <li class="itemLi">
-                        <a class="itemTagLi  efeitoItemTagLi" href="sobreCurso.html#conteudo-principal" target="_self">
-                            Sobre o Curso
-                        </a>
-                    </li>
-
-                    <li class="itemLi">
-                        <a class="itemTagLi  efeitoItemTagLi" href="sobreMassoterapia.html#conteudo-principal"
-                            target="_self">O que é
-                            Massoterapia</a>
-                    </li>
-
-                    <li class="itemLi">
-                        <a class="itemTagLi  efeitoItemTagLi" href="corpoDocente.html#conteudo-principal"
-                            target="_self">Corpo Docente</a>
-                    </li>
-
-                    <li class="itemLi">
-                        <a class="itemTagLi  efeitoItemTagLi" href="contato.html#conteudo-principal"
-                            target="_self">Contato</a>
-                    </li>
-
-                    <li class="itemLi">
-                        <a class="itemTagLi  efeitoItemTagLi" href="videoApresentacao.html#conteudo-principal"
-                            target="_self">Vídeo de
-                            Apresentação</a>
-                    </li>
-
-                    <li class="itemLiLogin">
-                        <a class="itemTagLogin  efeitoItemTagLogin" href="login.html#conteudo-principal" target="_self">
-                            Login
-                        </a>
-                    </li>
-                </ul>
-
-            </nav>
-            <div class="containerTitulos">
-                <h1>Curso Técnico em Massoterapia</h1>
-
-                <h2>Instituto Benjamin Constant</h2>
-            </div>
-
-        </header>
+            <div id="cabecalhoHome"></div>
+        </header>            
 
         <main id="conteudo-principal">
             <!--Skip Link e href do Menu Retorna para este Ponto-->
@@ -593,6 +537,8 @@
         </footer>    
 
         <!--script-->
+        <script defer  type="module"  src="dist/cabecalhoHome.js"></script>
+
         <script defer type="module" src="dist/voltarTopo.js"></script>
 
         <script defer type="module" src="dist/modoEscuro.js"></script>
