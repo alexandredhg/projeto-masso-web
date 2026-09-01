@@ -276,6 +276,7 @@ html, body{
 
 /*Botão Voltar Topo*/
 .btnVoltarTopo{
+    display: none; /* Adicionado para iniciar oculto */
     position: fixed;
     bottom: 7rem;
     right: 3rem;
@@ -287,19 +288,11 @@ html, body{
     font-size: 0.8rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
-    /*border: none;*/
     cursor: pointer;
     border-radius: 50px;
     text-align: center;
     padding: 7px 5px;       
-    
 }
-
-.btnVoltarTopo:hover{
-    transform: scale(1.2);
-}
-
-
 
 /*------------------------------------------------------------*/
 

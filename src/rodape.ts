@@ -1,3 +1,5 @@
+
+/*RODAPÉ*/
 export const carregarRodape = async() => {
     const rodape = document.getElementById("rodape") as HTMLDivElement;
 
@@ -12,3 +14,4 @@ export const carregarRodape = async() => {
     
 };
 carregarRodape();
+
