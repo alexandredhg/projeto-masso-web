@@ -15,6 +15,12 @@ export const carregarCabecalho = () => __awaiter(void 0, void 0, void 0, functio
     const html = yield conteudo.text();
     //inserir o html no rodapé.
     cabecalho.innerHTML = html;
+    //tratamento para focar o conteúdo do conteúdo principal
+    if (window.location.hash === "#conteudo-principal") {
+        const elemento = document.getElementById("conteudo-principal");
+        elemento === null || elemento === void 0 ? void 0 : elemento.scrollIntoView({ block: "start" });
+        elemento === null || elemento === void 0 ? void 0 : elemento.focus();
+    }
 });
 carregarCabecalho();
 //# sourceMappingURL=cabecalho.js.map

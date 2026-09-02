@@ -276,23 +276,38 @@ html, body{
 
 /*Botão Voltar Topo*/
 .btnVoltarTopo{
-    display: none; /* Adicionado para iniciar oculto */
+   display: none; /* Inicia oculto e o JS exibe na rolagem */
     position: fixed;
-    bottom: 7rem;
-    right: 3rem;
-    z-index: 99999;
-
-    border: 5px solid blueviolet;
-    background-color: white;   
-    color: blueviolet;
-    font-size: 0.8rem;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    
+    /* Estilização visual */
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 10px;
+    font-size: 14px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
-    border-radius: 50px;
-    text-align: center;
-    padding: 7px 5px;       
+
+    /*Propriedade Quebra a Linha do Botão*/
+    white-space: pre-line;
+    
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+    
 }
+
+
+.btnVoltarTopo:hover{
+    transform: scale(1.1);
+}
+
+
+
 
 /*------------------------------------------------------------*/
 

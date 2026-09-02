@@ -1,2 +1,2 @@
-export declare const carregarvoltarTopo: () => Promise<void>;
+export {};
 //# sourceMappingURL=voltarTopo.d.ts.map

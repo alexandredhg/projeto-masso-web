@@ -18,15 +18,4 @@ export const carregarRodape = () => __awaiter(void 0, void 0, void 0, function* 
     rodape.innerHTML = html;
 });
 carregarRodape();
-function scrollFunction() {
-    const btnVoltarTopo = document.getElementById("btnVoltarTopo");
-    if (btnVoltarTopo) {
-        if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-            btnVoltarTopo.style.display = "block";
-        }
-        else {
-            btnVoltarTopo.style.display = "none";
-        }
-    }
-}
 //# sourceMappingURL=rodape.js.map
