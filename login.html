@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Login</title>
+        <link rel="stylesheet" href="css/estilos.css" />
+        <link rel="stylesheet" href="css/login.css" />
+    </head>
+
+    <body>
+        
+        <div id="divMenuAcessibilidade"></div> 
+
+        <header>
+            <div id="cabecalho"></div>            
+        </header>
+
+        <main id="conteudoPrincipal">
+
+            <h3>Página de Login</h3>
+
+            <h4>Faça Seu Login:</h4>
+
+            <div id="divMensagem" role="alert" aria-live="assertive" class="msg"></div>
+
+            <form id="formLogin" class="centerForm">
+                <div>
+                    <label for="txtEmail">* E-mail:</label>
+
+                    <input type="email" id="txtEmail" />
+                </div>
+
+
+                <div>
+
+                    <label for="txtSenha">* Senha:</label>
+
+                    <input type="password" id="txtSenha" />
+                    <button type="button" id="toggleSenha" class="btnMostrar">Mostrar</button>
+
+                </div>
+
+
+                <div class="btnContainer">
+                    <div>
+                        <button type="submit" class="btnEntrar">Entrar</button>
+                    </div>
+
+                    <div>
+                        <button type="reset" class="btnLimpar">&#x2327; Limpar</button>
+                    </div>
+                </div>
+
+
+                <!--<div>
+                        <a href="areaRestrita.html"></a>
+                    </div> -->
+            </form>
+
+            <!--<hr/>-->
+
+
+
+
+            <div class="voltarTopo">
+                <button class="btnVoltarTopo" id="btnVoltarTopo" title="Voltar para o topo">
+                    ↑<br>Topo
+                </button>
+            </div>
+
+        </main>
+
+        <!--"hr"Fubção Cria uma Linha Horizontal no Código-->
+        <hr>
+
+        <footer>
+
+            <div id="rodape"></div>
+            
+        </footer>
+
+
+        <!--script-->
+        <script defer  type="module"  src="dist/cabecalho.js"></script>
+        
+        <script defer  type="module"  src="dist/menuAcessibilidade.js"></script>
+
+        <script type="module" src="dist/login.js"></script>
+
+        <script type="module" src="dist/voltarTopo.js"></script>        
+
+        <script defer type="module" src="dist/rodaoe.js"></script>
+
+    </body>
+
+
+</html>

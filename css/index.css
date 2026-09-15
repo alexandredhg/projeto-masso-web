@@ -1,0 +1,1044 @@
+
+
+
+
+
+
+
+
+
+
+/*Titulos*/
+h1{
+    color: #586927;       
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    margin-bottom: 0rem;
+    margin-left: 4rem;
+    text-align: left;
+   
+}
+
+
+
+
+h2{    
+    
+    font-size: 2rem;
+    color: #586927;   
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    margin-bottom: 0.5rem;
+    margin-left: 4rem;
+    text-align: left;       
+
+
+}
+
+
+.containerTitulos{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 4rem;
+}
+
+
+
+h3{   
+    
+    font-size: 1.75rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #191970;         
+    margin-bottom: 3rem;
+    margin-left: 4rem;   
+    text-align: left;
+
+}
+
+h4{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a;      
+    text-align: center;
+
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    
+
+}
+
+h5{
+    font-size: 1.25em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #4a3525;     
+    text-align: left;
+    margin-left: 4rem;    
+    margin-bottom: 2rem;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*Paragrafo*/
+.containerParagrafo{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    
+    
+    margin-bottom: 4rem
+     
+}
+
+
+.itemParagrafo{
+    width: 70%;  
+
+    
+    margin: 0 auto;
+    text-align: justify;
+    text-indent: 3.5rem;
+    /*Cria Espassamentos entre Linhas do Texto*/
+    line-height: 1.5;
+
+    /*Quebra Palavras para Caber na Caixa*/
+    overflow-wrap: break-word;      
+}
+
+p{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Imagens do Perfil*/
+.centerItemImagensPerfil{ 
+    max-width: 100%;
+    height: auto;
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    column-gap: 1rem;
+    row-gap: 2rem;
+
+    margin-bottom: 2.5rem;
+    
+    border: 0px  solid  black;
+
+    
+
+    flex-wrap: wrap;
+    /*flex-wrap: wrap;
+    Propriedade Quebra para a Outra Linha*/
+    
+}
+
+
+
+.itemImagensPerfil{
+    border: 0px solid black;    
+    height: 11rem;
+    width: 11rem;
+    flex-shrink: 0;
+    aspect-ratio: 16/9;
+    margin-bottom: 1rem;
+
+    border: 0px  solid  black;
+
+    
+    
+}
+
+
+
+.legendaImagensPerfil{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 10rem;
+    height: auto;
+    text-align: center;
+
+    margin-bottom: 1.5rem;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*Galeria - Fotos*/
+.containerFotosAlunos{
+    
+    max-width: 100%;
+    height: auto;
+    border: 0px  solid  black; 
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+
+    column-gap: 1.5rem;    
+    row-gap: 2rem;
+    
+    
+    margin-bottom: 2.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;    
+    
+    /*flex-wrap: wrap;
+    Propriedade Quebra para a Outra Linha*/
+
+    /*flex-wrap: nowrap;
+    Força Permenecer na Mesma Linha*/   
+    
+    
+}
+
+
+
+.itemFotosAlunos{
+    border: 0px solid black; 
+    border-radius: 0.5rem;   
+    height: 14rem;
+    width: 11rem;
+    flex-shrink: 0;
+
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    margin-bottom: 2rem;
+    
+    /*aspect-ratio: 16/9;*/    
+}
+
+
+.itemFotosAlunos:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+/*Descrição Fotos Alunos*/
+.descricaoFotosAlunos{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+
+/*Esconde a Descrição das Fotos do Aluno*/
+.esconderDescricaoFotosAlunos{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+/*Galeria - Videos*/
+/*.containerVideosAlunos{
+    max-width: 100%;
+    height: auto;
+    border: 0px  solid  black;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+
+    column-gap: 3rem;
+    row-gap: 2.5rem;
+    margin-bottom: 4rem;*/
+    
+    
+    
+    
+    /*Propriedade Quebra para a Outra Linha
+    flex-wrap: wrap;*/
+
+   /*Cria uma Barra de Rolagem 
+   overflow-x: auto;  
+    
+}*/
+
+
+
+
+
+.containerVideosAlunos {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 5rem repeat(2,1fr);
+    
+    gap: 1rem;
+    column-gap: 1rem;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+
+
+
+
+
+.itemVideosAlunos{    
+    border: 5px  solid  red;
+    display: flex;
+    flex-direction: column;
+    width: 80%;;
+    height: 20rem;    
+    box-sizing: border-box;
+    
+
+}
+
+
+
+.divider{
+    grid-row: span 2;
+}
+
+
+
+
+/*Descrição Video Alunos*/
+.descricaoVideosAlunos{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+
+/*Esconde a Descrição do Video do Aluno*/
+.esconderDescricaoVideosAlunos{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Primeiro Bloco Curiosidade*/ 
+
+/* Container do Grid */
+.containerGridCuriosidades {
+    max-width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Força EXATAMENTE 2 linhas iguais, sem autorizar a 3ª linha */
+    grid-template-rows: repeat(2, minmax(0, 1fr));   
+    gap: 15px;
+    margin-bottom: 4rem;
+
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border: 0px  solid  black;
+}
+
+
+
+
+/* O Destaque ocupa 2 linhas na primeira coluna */
+.itemVideoDestaque {
+    grid-column: 2;
+    grid-row: 1 / span 2; /* Força a ir da linha 1 até o final da linha 2 */
+}
+
+
+
+/* Container do Vídeo: Controla a área do vídeo para não esmagar a legenda */
+.video-wrapper {
+    width: 100%;
+    aspect-ratio: 16/9;            /* Garante o formato correto de vídeo nos cards normais */
+    position: relative;
+    
+}
+
+.video-wrapper1 {
+    width: 100%;
+    flex: 1;
+    min-height: 0;             /* Garante o formato correto de vídeo nos cards normais */
+    position: relative;
+
+}
+
+
+
+
+
+/*Segundo Bloco Curiosidade*/ 
+
+/* Container do Grid*/
+
+.containerGridVideosCuriosidades {
+    max-width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Força EXATAMENTE 2 linhas iguais, sem autorizar a 3ª linha */
+    grid-template-rows: repeat(2, auto);  
+    gap: 15px;
+    margin-bottom: 4rem;
+
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+}
+
+
+
+
+.cardVideoCuriosidadeDestaque{
+    border: 0px  solid  red;
+    display: flex;
+    flex-direction: column;
+    width: 100%;;
+    height: 100%;    
+    box-sizing: border-box;
+
+    
+}
+
+
+
+.cardVideoCuriosidade {
+    border: 0px  solid  coral;
+    display: flex;
+    flex-direction: column;
+    width: 100%;;
+    
+    box-sizing: border-box;
+    
+}
+
+
+
+.itemVideoDestaque2 {    
+    grid-column: 1;
+    grid-row: 1 / span 3;
+}
+
+
+
+.itemVideoDestaque3 {    
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+
+
+
+
+
+
+
+
+/*Propriedades em Comum*/
+/* Legendas (SEMPRE VISÍVEIS NA PARTE INFERIOR) */
+.legendaVideosCuriosidades {
+    border-top: 0px solid black;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 7px  7px;    
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 100%;
+    
+    /* Evita que a legenda encolha ou suma */
+    flex-shrink: 0; 
+
+    /* Exibe até 2 linhas com reticências (...) se for muito grande */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+
+
+/*Descriçã Curiosidade*/
+.descricaoVideosCuriosidades{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+
+/*Esconde a Descrição ds Videos Curiosidades*/
+.esconderDescricaoVideosCuriosidades{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    } 
+
+
+
+
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    
+    }
+     
+
+    
+
+
+
+
+
+    .container-switch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .switch {
+        margin-right: 0px;
+    }
+
+
+
+
+
+    .btnVoltarTopo {
+        font-size: 1.2rem;
+        width: 4rem;
+        height: 4rem;
+        color: white;
+        background-color: red;
+
+        border: none;
+        bottom: 10px;
+        right: 10px;
+    }     
+       
+        
+       
+        
+    
+
+
+
+
+
+
+
+
+    h1{
+        font-size: 3.2rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+    }
+
+    h2{
+        font-size: 2.7rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5rem;
+    }
+
+    h3{
+        font-size: 2.2rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h4{
+        font-size: 1.7rem;        
+        text-align: center; 
+        margin-left: auto;
+        margin-right: auto;       
+    }
+    
+    h5{
+        font-size: 1.2rem;        
+        text-align: center;
+    }
+
+
+
+
+
+
+
+    /*Menu*/
+    .containerUl{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       row-gap: 2rem;
+
+    }
+
+
+
+    
+    
+    .itemLiLogin{
+        width:80%;
+        height: auto;
+        border: 5px solid  coral;
+        text-align: center;    
+         
+       
+        border-radius: 15px;
+        padding: 20px 0px;       
+                     
+
+    }  
+
+
+
+    .itemTagLogin{
+        font-size: 2rem;
+        border: none;            
+    
+    }
+    
+    
+
+
+
+    .itemLi{         
+        width:80%;
+        height:auto;
+        border: 5px solid  blue;
+        text-align: center;
+    
+         
+       
+        border-radius: 15px;
+        padding: 20px 0px;
+        
+
+        
+
+    }
+
+    .itemTagLi{
+        font-size: 2.2rem;
+        text-decoration: none;
+        font-weight: bold;    
+    
+    }
+
+
+    
+
+
+
+    /*Pargrafo*/
+    .itemParagrafo{
+        width: 85%;       
+          
+    }
+
+
+
+    p{
+        font-size: 1.2rem;
+        text-align: justify;        
+        
+        text-indent: 3.5rem;
+    }
+
+
+
+    /*Galeria - Fotos*/
+    .containerFotosAlunos{
+       /* width: 100%; 
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-evenly;
+        align-items: center;*/
+        column-gap: 2rem;
+        row-gap: 3rem;
+        margin-bottom: 4rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+         overflow-x: auto;
+        
+        
+        /*flex-wrap: wrap;
+        Propriedade Quebra para a Outra Linha*/
+       
+        
+        
+    }
+
+
+
+    .itemFotosAlunos{
+        border: 0px solid black;    
+        height: 16.5rem;
+        width: 12.5rem;
+        flex-shrink: 0;
+    
+        
+        
+    }
+
+
+
+    /*Galeria - Videos*/
+    .containerVideosAlunos{ 
+       /* width: 100%;
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.5rem;*/
+        row-gap: 3rem;
+        text-align: center;
+        
+        
+        flex-wrap: wrap;
+        /*Propriedade Quebra para a Outra Linha*/
+        
+        
+    }
+
+
+
+    .itemVideosAlunos{
+        border: 2px solid black;    
+        height: 14rem;
+        width: 90%;
+        flex-shrink: 0;
+        margin-bottom: 1rem;
+
+        
+    }
+
+
+
+
+
+
+    /*Imagens do Perfil*/
+    /*.containerImagemPerfil{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;        
+        
+    }*/
+
+    /*.itemImagemPerfil{        
+        border: 0px solid black;    
+        height: 0rem;
+        width: 40%;            
+        
+    }*/
+
+
+    
+
+
+
+    /*.legendaImagemPerfil{
+        font-size: 2.5rem;
+        font-weight: bold;          
+        text-align: center;
+        margin-bottom: 8rem;
+
+        width: 100%;
+        height: auto;
+        
+    }*/
+
+
+
+    /*curiosidades*/
+    .containerCuriosidades{ 
+        width: 100%;
+        row-gap: 1rem;
+       
+        
+        /*Propriedade Quebra para a Outra Linha*/
+        flex-wrap: wrap;
+        
+        
+    }
+
+
+
+    .itemCuriosidades{
+        border: 0px solid black;    
+        height: 18rem;
+        width: 90%;
+        margin-bottom: 2rem;
+        
+        
+
+        
+    }
+
+
+    .legendaCuriosidades{
+        font-size: 2.5rem;
+        font-weight: bold;          
+        text-align: center;
+        margin-bottom: 8rem;
+        width: 100%;
+        height: auto;
+
+    }
+
+
+
+
+
+    /*Botão Voltar Topo*/
+    
+
+
+    
+    
+    /*Itens do Contener/Rodape*/
+    .altoral{
+        font-size: 2.5rem;
+        text-align: center;
+        
+    }
+
+
+    .linkDev{
+        font-size: 2.5rem;
+       text-align: center;           
+        
+    } 
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (orientation: landscape) {} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,730 @@
+
+
+
+
+
+/*Titulos*/
+h1{
+    color: #586927;       
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    margin-bottom: 0rem;
+    margin-left: 4rem;
+    text-align: left;
+   
+}
+
+
+
+
+h2{    
+    
+    font-size: 2rem;
+    color: #586927;   
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    margin-bottom: 0.5rem;
+    margin-left: 4rem;
+    text-align: left;       
+
+
+}
+
+
+.containerTitulos{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 4rem;
+}
+
+
+
+h3{   
+    
+    font-size: 1.75rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #191970;         
+    margin-bottom: 6rem;
+    margin-left: 4rem;   
+    text-align: left; 
+
+}
+
+h4{
+    font-size: 1.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a;      
+    text-align: center;
+    margin-bottom: 3rem;
+    
+
+
+}
+
+h5{
+    font-size: 1.25em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #7091b8; 
+    
+    text-align: center;
+    
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Paragrafo*/
+.containerParagrafo{
+    display: block;
+    margin: 0 auto;
+    
+    max-width: 70%;
+    margin-bottom: 6rem
+     
+}
+
+
+.itemParagrafo{  
+
+    
+    margin: 0 auto;
+    text-align: justify;
+    text-indent: 3.5rem;
+    /*Cria Espassamentos entre Linhas do Texto*/
+    line-height: 1.5;
+
+    /*Quebra Palavras para Caber na Caixa*/
+    overflow-wrap: break-word;      
+}
+
+p{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Formularios*/
+.centerFor{
+    margin-left: 7rem;
+
+}
+
+
+label{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 7rem;      
+
+}
+
+
+
+input{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 20rem;
+    height: auto;
+    padding: 10px 10px;
+    text-align: center;
+    border: 2px  solid  black;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+
+}
+
+
+
+/*Botões*/
+.btnContainer{
+    text-align: center;
+}
+
+
+.btnEntrar{  
+    background-color: blue;
+    color: white;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    height: auto;
+    width: 50rem;
+    padding: 12px 12px;
+    /*border: none;*/
+    border: 0px solid blue;
+    cursor: pointer; 
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.btnEntrar:hover{
+    transform: scale(1.1);
+}
+
+
+
+.btnLimpar{  
+    background-color: coral;
+    color: white;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    height: auto;
+    width: 50rem;
+    padding: 12px 12px;
+    /*border: none;*/
+    border: 0px solid coral;
+    cursor: pointer; 
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+    
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.btnLimpar:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+.btnMostrar{
+        
+    background-color: gray;
+    color: white;
+    font-size: 0.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+    width: 3.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    padding: 5px 5px;
+
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+     
+        
+}
+
+
+.btnMostrar:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+/*Memsagem*/
+.msg{
+    display: block;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }  
+
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 3.7rem;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    h3{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 3.1rem;        
+        text-align: center;        
+    }
+    
+    h5{
+        font-size: 2.9rem;        
+        text-align: center;
+    }
+
+
+
+
+
+    /*Menu*/
+    .containerUl{
+        display: block;
+        width: 100vw;        
+        list-style: none;
+
+    }
+
+    .itemLiInicial{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        border-radius: 60px;               
+
+    } 
+    
+    
+    .itemLiLogin{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        border-radius: 60px;               
+
+    }    
+
+
+    .itemLi{         
+        width:75%;
+        height: 8rem; 
+        margin: 0 auto; 
+        margin-top: 2rem;
+        border-radius: 600px;
+
+    }
+
+    .itemTagA{
+        font-size: 3.1rem;
+        text-decoration: none;    
+    
+    }
+
+
+
+
+
+
+    /*Paragrafo*/
+    p{
+        font-size: 2.7rem;
+        text-align: justify;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: 3.5rem;
+    }
+
+    .sair{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+
+    .menuLi{
+        font-size: 3.3rem;
+        text-align: center; 
+                
+    }
+
+    .menuUl{
+        list-style-type: none;        
+        text-align: center; 
+                
+    } 
+
+
+    /*Imagem*/
+    .container{     
+        flex-direction: column;
+        
+    } 
+    
+    .item{
+    border: 0px solid white;    
+    height: 35rem;
+    width: 90%;    
+
+    }
+
+    
+    /*Formulários*/
+    label{
+        font-size: 3.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    input{
+        font-size: 3.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 85%;
+        border: 3px solid black;
+    }
+
+    select{
+        font-size: 3.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    fieldset{
+        font-size: 3.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .btnEntrar{
+        font-size: 3.1rem;
+        width: 50%;
+        height: 6.5rem;
+        border-radius: 8px;
+        margin-top: 1.3rem;
+        text-align: center;
+    }
+
+    .btnMostrar{
+        font-size: 3.1rem;
+        width: 50%;
+        height: 6.5rem;
+        border-radius: 8px;
+        margin-top: 1.3rem;
+        text-align: center;
+    }
+
+    .msg{
+        font-size: 3.5rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+
+
+
+
+
+    /*Botão Voltar Topo*/
+    .btnVoltarTopo{        
+        font-size: 2.7rem;
+        text-align: center; 
+        padding: 50px 100px;
+        border-radius: 20px;       
+    }
+
+
+
+    
+    
+    /*Itens do Contener/Rodape*/
+    .altoral{
+        font-size: 2.5rem;
+        text-align: center;
+        
+    }
+
+
+    .linkDev{
+        font-size: 2.5rem;
+       text-align: center;           
+        
+    }   
+
+
+
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }  
+
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 3.7rem;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    h3{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 3.1rem;        
+        text-align: center;        
+    }
+    
+    h5{
+        font-size: 2.9rem;        
+        text-align: center;
+    }
+
+
+
+
+
+    /*Menu*/
+    .containerUl{
+        display: block;
+        width: 100vw;        
+        list-style: none;
+
+    }
+
+    .itemLiInicial{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        border-radius: 60px;               
+
+    } 
+    
+    
+    .itemLiLogin{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        border-radius: 60px;               
+
+    }    
+
+
+    .itemLi{         
+        width:75%;
+        height: 8rem; 
+        margin: 0 auto; 
+        margin-top: 2rem;
+        border-radius: 600px;
+
+    }
+
+    .itemTagA{
+        font-size: 3.1rem;
+        text-decoration: none;    
+    
+    }
+
+
+
+
+
+
+    /*Paragrafo*/
+    p{
+        font-size: 2.7rem;
+        text-align: justify;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: 3.5rem;
+    }
+
+    .sair{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+
+    .menuLi{
+        font-size: 3.3rem;
+        text-align: center; 
+                
+    }
+
+    .menuUl{
+        list-style-type: none;        
+        text-align: center; 
+                
+    } 
+
+
+    /*Imagem*/
+    .container{     
+        flex-direction: column;
+        
+    } 
+    
+    .item{
+    border: 0px solid white;    
+    height: 35rem;
+    width: 90%;    
+
+    }
+
+    
+    /*Formulários*/
+    label{
+        font-size: 3.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    input{
+        font-size: 3.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 85%;
+        border: 3px solid black;
+    }
+
+    select{
+        font-size: 3.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    fieldset{
+        font-size: 3.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .btnEntrar{
+        font-size: 3.1rem;
+        width: 50%;
+        height: 6.5rem;
+        border-radius: 8px;
+        margin-top: 1.3rem;
+        text-align: center;
+    }
+
+    .btnMostrar{
+        font-size: 3.1rem;
+        width: 50%;
+        height: 6.5rem;
+        border-radius: 8px;
+        margin-top: 1.3rem;
+        text-align: center;
+    }
+
+    .msg{
+        font-size: 3.5rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+
+
+
+
+
+    /*Botão Voltar Topo*/
+    .btnVoltarTopo{        
+        font-size: 2.7rem;
+        text-align: center; 
+        padding: 50px 100px;
+        border-radius: 20px;       
+    }
+
+
+
+    
+    
+    /*Itens do Contener/Rodape*/
+    .altoral{
+        font-size: 2.5rem;
+        text-align: center;
+        
+    }
+
+
+    .linkDev{
+        font-size: 2.5rem;
+       text-align: center;           
+        
+    }   
+
+
+
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

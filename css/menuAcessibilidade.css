@@ -1,0 +1,205 @@
+.containerMenuAcessibilidade{    
+    margin-bottom: 30px;
+}
+
+
+
+.skipLink {
+    top: -9999px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 40px; /* Define a distância do topo aqui */
+    position: absolute;
+    text-decoration: none;
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px;
+    z-index: 9999; /* Garante que o botão fique visível por cima de outros elementos */
+}
+
+
+.skipLink:focus {
+    /*position: static;*/
+    top: 0px;
+    left: 0px; /* Traz o botão de volta para a tela mantendo a posição topo */
+     /* Mantém como absolute para respeitar o 'top' */
+    outline-offset: 3px;
+    outline: 3px solid #ffcc00;
+}
+
+
+
+.btnAcessibilidade {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: none;
+
+    position: fixed;
+    z-index: 9999;
+    top: 10px;
+    right: 35px;
+    cursor: pointer;
+    width: 180px;
+    height: 30px;
+    box-sizing: border-box;
+
+    margin-bottom: 0px;
+    
+}
+
+
+.menuAcessibilidade {
+    position: fixed;
+    top: 45px;
+    right: 35px;
+    
+    border: 3px solid blue;    
+    width: 180px;
+    box-sizing: border-box;
+}
+
+
+.menuAcessibilidadeButton {
+display: block;    
+width: 85%;
+height: 25px;
+margin: 10px auto;
+
+color: green;
+border:  3px solid green;
+border-radius: 5px;
+font-size: 12px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+}
+
+
+/*Contraste*/
+.contraste, .contraste ul{
+    background-color: #414246;
+    color: white;
+}
+
+.contraste th, .contraste td{
+    border: 3px solid gray;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.contraste a{
+    color: white;
+}
+
+
+.contraste input, .contraste textarea{
+    background-color: #893041;
+    color: white;
+    border: 3px solid white;
+}
+
+
+/* Correção para o autopreenchimento */
+.contraste input:-webkit-autofill,
+.contraste input:-webkit-autofill:hover, 
+.contraste input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #893041 inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.contraste input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+
+
+
+.contraste .divMensagem{
+    color: white;
+}
+
+
+.contraste footer{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*Botões Menu*/
+.contraste .itemLiHome{
+    background-color: #893041;
+    color: white;
+    border: none;
+}
+
+
+.contraste .sairLogout, .contraste .voltar{
+    background-color: gray;
+    color: white;
+    border: none;    
+}
+
+
+.contraste .itemLi{
+    background-color: #3b5d76;
+    color: white;
+    border: none;
+}
+
+
+.contraste .itemLiLogin{
+    background-color: #e5a93b;
+    color: white;
+    border: none;
+}
+
+
+
+/*Botões*/
+.contraste .btnMostrar{
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    width: 100%;
+    max-width: 8rem;
+}
+
+
+
+
+/*Menu Acessibilidade*/
+.contraste .btnAcessibilidade{
+    background-color: blue;
+}
+
+.contraste .menuAcessibilidade{
+    background-color: black;
+    border: 3px solid gray;
+}
+
+
+.contraste .menuAcessibilidadeButton{
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+

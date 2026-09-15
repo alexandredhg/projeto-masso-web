@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Redefinição de Senha</title>
+        <link rel="stylesheet" href="css/redefinicaoSenha.css"/>
+    </head>
+    <body>
+         <a class="skip-link" href="#conteudo-principal">
+        Ir Para o Conteúdo Principal
+    </a>
+
+    <div class="container-switch">
+        <label class="switch" for="theme-toggle">
+            <span id="switch-label">Modo Escuro</span>
+            <input type="checkbox" id="theme-toggle" role="switch" aria-labelledby="switch-label" aria-checked="false">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+
+    <header>
+
+        
+
+        
+        <div class="containerTitulos">
+            <h1>Redefinição de Senha</h1>
+
+            <h2>Ambulatório de Massoterapia</h2>
+        </div>
+
+    </header>
+
+    <main id="conteudo-principal">
+
+        <h3>Página de Redefinição de Senhas</h3>
+
+        <h4>Formulário de Redefinição de Senha:</h4>
+
+        <div id="divMensagem" role="alert" aria-live="assertive" class="msg"></div>
+
+        <form id="formRedefinicaoSenha" class="centerForm">           
+
+
+            <div>
+
+                <label for="txtConfSenha">* Senha:</label>
+
+                <input type="password" id="txtConfSenha" />
+                <button type="button" id="toggleConfSenha" class="btnMostrar">Mostrar</button>
+
+
+            </div>
+
+            <div>
+
+                <label for="txtSenha">* Confirmar Senha:</label>
+
+                <input type="password" id="txtSenha" />
+                <button type="button" id="toggleSenha" class="btnMostrar">Mostrar</button>
+
+
+            </div>
+
+            <div class="btnContainer">
+                <div>
+                    <button type="submit" class="btnCadastrar">Entrar</button>
+                
+                    <button type="reset" class="btnLimpar">Limpar</button>
+                </div>
+            </div>
+           
+        </form>
+        
+        <!--<hr/>-->
+
+        
+
+        <div class="containerVoltar">
+                <a class="voltar" href="areaRestritaCoordenacao.html">← Voltar</a>
+            </div>
+
+
+        <div class="voltarTopo">
+            <button class="btnVoltarTopo" id="btnVoltarTopo" title="Voltar para o topo">
+                ↑<br>Topo
+            </button>
+        </div>
+
+    </main>
+
+         
+        
+    </body>
+    <script type="module" src="dist/redefinicaoSenha.js"></script>
+
+    <script type="module" src="dist/voltarTopo.js"></script>
+
+    <script type="module" src="dist/modoEscuro.js"></script>
+</html>

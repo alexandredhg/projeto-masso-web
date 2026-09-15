@@ -1,0 +1,460 @@
+
+
+
+
+
+
+/*Titulos*/
+h1{
+    color: #586927;       
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    margin-bottom: 0rem;
+    margin-left: 4rem;
+    text-align: left;
+   
+}
+
+
+
+
+h2{    
+    
+    font-size: 2rem;
+    color: #586927;   
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    margin-bottom: 0.5rem;
+    margin-left: 4rem;
+    text-align: left;       
+
+
+}
+
+
+.containerTitulos{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 4rem;
+}
+
+
+
+h3{   
+    
+    font-size: 1.75rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #191970;         
+    margin-bottom: 3rem;       
+    text-align: center 
+
+}
+
+h4{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a;      
+    text-align: center;
+    margin-bottom:2rem;
+}
+
+h5{
+    font-size: 1.25em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #4a3525;  
+    
+    text-align: center;
+    
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Paragrafo*/
+.containerParagrafo{
+    display: block;
+    margin: 0 auto;
+    
+    max-width: 70%;
+    margin-bottom: 6rem
+     
+}
+
+
+.itemParagrafo{  
+
+    
+    margin: 0 auto;
+    text-align: justify;
+    text-indent: 3.5rem;
+    /*Cria Espassamentos entre Linhas do Texto*/
+    line-height: 1.5;
+
+    /*Quebra Palavras para Caber na Caixa*/
+    overflow-wrap: break-word;      
+}
+
+p{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }  
+
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 3.7rem;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    h3{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 3.1rem;        
+        text-align: center;        
+    }
+    
+    h5{
+        font-size: 2.9rem;        
+        text-align: center;
+    }
+
+
+
+
+
+    /*Menu*/
+    .containerUl{
+        display: block;
+        width: 100vw;        
+        list-style: none;
+
+    }
+
+    .itemLiInicial{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        border-radius: 60px;               
+
+    } 
+    
+    
+    .itemLiLogin{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        border-radius: 60px;               
+
+    }    
+
+
+    .itemLi{         
+        width:75%;
+        height: 8rem; 
+        margin: 0 auto; 
+        margin-top: 2rem;
+        border-radius: 600px;
+
+    }
+
+    .itemTagA{
+        font-size: 3.1rem;
+        text-decoration: none;    
+    
+    }
+
+
+
+
+
+
+
+    /*Paragrafo*/
+    p{
+        font-size: 2.7rem;
+        text-align: justify;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: 3.5rem;
+    }
+
+    .sair{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+
+    .menuLi{
+        font-size: 3.3rem;
+        text-align: center; 
+                
+    }
+
+    .menuUl{
+        list-style-type: none;        
+        text-align: center; 
+                
+    }
+    
+    
+
+
+
+
+    /*Botão Voltar Topo*/
+    .btnVoltarTopo{        
+        font-size: 2.7rem;
+        text-align: center; 
+        padding: 50px 100px;
+        border-radius: 20px;       
+    }
+
+
+
+    
+    
+    /*Itens do Contener/Rodape*/
+    .altoral{
+        font-size: 2.5rem;
+        text-align: center;
+        
+    }
+
+
+    .linkDev{
+        font-size: 2.5rem;
+       text-align: center;           
+        
+    }   
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }  
+
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 3.7rem;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    h3{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 3.1rem;        
+        text-align: center;        
+    }
+    
+    h5{
+        font-size: 2.9rem;        
+        text-align: center;
+    }
+
+
+
+
+
+    /*Menu*/
+    .containerUl{
+        display: block;
+        width: 100vw;        
+        list-style: none;
+
+    }
+
+    .itemLiInicial{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        border-radius: 60px;               
+
+    } 
+    
+    
+    .itemLiLogin{        
+        width:75%;
+        height: 8rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        border-radius: 60px;               
+
+    }    
+
+
+    .itemLi{         
+        width:75%;
+        height: 8rem; 
+        margin: 0 auto; 
+        margin-top: 2rem;
+        border-radius: 600px;
+
+    }
+
+    .itemTagA{
+        font-size: 3.1rem;
+        text-decoration: none;    
+    
+    }
+
+
+
+
+
+
+
+    /*Paragrafo*/
+    p{
+        font-size: 2.7rem;
+        text-align: justify;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: 3.5rem;
+    }
+
+    .sair{
+        font-size: 3.3rem;
+        text-align: center;
+    }
+
+    .menuLi{
+        font-size: 3.3rem;
+        text-align: center; 
+                
+    }
+
+    .menuUl{
+        list-style-type: none;        
+        text-align: center; 
+                
+    }
+    
+    
+
+
+
+
+    /*Botão Voltar Topo*/
+    .btnVoltarTopo{        
+        font-size: 2.7rem;
+        text-align: center; 
+        padding: 50px 100px;
+        border-radius: 20px;       
+    }
+
+
+
+    
+    
+    /*Itens do Contener/Rodape*/
+    .altoral{
+        font-size: 2.5rem;
+        text-align: center;
+        
+    }
+
+
+    .linkDev{
+        font-size: 2.5rem;
+       text-align: center;           
+        
+    }   
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

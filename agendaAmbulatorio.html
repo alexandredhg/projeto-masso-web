@@ -1,0 +1,37 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página da Agenda do Ambulatorio</title>
+        <link rel="stylesheet" href="css/agendaAmbulatorio.css" />
+        " />
+    </head>
+    <body>
+        <h1>Página de Agendamento de Pacientes</h1>
+        <br>
+
+        <h2>Horários e Pacientes Agendados</h2>
+
+        <div class="containerContorno">        
+            <div class="itemContorno">
+                <iframe src="https://calendar.google.com/calendar/embed?src=alexandre.dev2024%40gmail.com&ctz=America%2FSao_Paulo" 
+                   style="border: 0" width= "100%" height="500px" frameborder="0" scrolling="no">
+                </iframe>                      
+            </div>
+        </div> 
+
+        <button class="btnVoltarTopo" id="btnVoltarTopo" aria-label="Voltar Para o Topo" title="Voltar para o topo">
+          ↑<br>Topo
+        </button>
+
+        <div class="containerVoltar">        
+            <a class="voltar" href="javaScript: history.back()">Voltar</a>            
+        </div>
+                  
+        /*script*/
+        <script defer type="module" src="dist/voltarTopo.js"></script>
+
+        <script defer type="module" src="dist/modoEscuro.js"></script>
+               
+    </body>
+</html>

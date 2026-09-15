@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Área do Ambulatório (CTA)</title>
+        <link rel="stylesheet" href="css/areaAmbulatorio.css">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+
+        <h1>Instituto Benjamin Constant</h1>
+               
+        <h2>Curso Técnico em Massoterapia</h2>
+        
+        <h3>Área da Secretátia (Ambulatório do CTA)</h3>
+               
+        <h4>Acesso da Secretária:</h4>
+
+        <br><br>
+
+        <div>
+        <br>
+            <ul class="menuUl">
+
+                
+                <li>                
+                    <a href="agendaAmbulatorio.html" target="_self" class="menuLi">Agenda</a>
+                </li>
+                <br>                
+                <li>                
+                    <a href="cadastrarPaciente.html" target="_self" class="menuLi">Cadastrar Paciente</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <br><br>
+        
+        <div id="divMensagem" role="alert" aria-live="assertive" class="msg"></div>
+
+        <div class="containerSairLogout">            
+            <button class="sairLogout" type="button" id="logoutBtn">
+              Encerrar Sessão
+            </button>
+        </div>
+        
+        <!--Script-->
+        <script defer type="module" src="dist/logout.js"></script>
+                             
+    </body>
+
+</html> 
